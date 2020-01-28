@@ -1,0 +1,130 @@
+.topRated {
+    background-color: rgb(92, 58, 27);
+    height: 800px;
+    width: 100%;
+   display: flex;
+   justify-content: center;
+    .topRatedContainer {
+        width: 85%;
+        align-items: center;
+       
+        display: flex;
+        justify-content: space-between;
+        .titleContainer {
+            align-items: center;
+            width: 300px;
+            h1 {     
+                color: white;
+                font-style: italic;
+            }
+            .titleLine {
+                margin-top: -10px;
+                height: 2px;
+                width: 200px;
+                background-color: white;
+            }
+            p {
+                margin-top: 10px;
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .topContainer {
+            
+            h4 {
+                color: white;
+                font-size: 25px;
+                margin-top: 10px;
+            }
+            .hunterImage {
+                background-image: url(../images/top1.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 150px;
+                width: 650px;
+            }
+            .NoCalImage {
+                background-image: url(../images/top2.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 150px;
+                width: 650px;
+            }
+            .tranquilImage {
+                background-image: url(../images/top3.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 150px;
+                width: 650px;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 1250px) {
+    .topRated {
+        .topRatedContainer {
+            width: 75%;
+            .titleContainer {
+                margin-right: 20px;
+               
+            }
+            .topContainer {
+                width: 65%;
+              h4 {
+                  font-size: 15px;
+              }
+              .hunterImage {
+                width: 100%;
+                 
+             }
+             .NoCalImage {
+                 width: 100%;
+             }
+             .tranquilImage {
+                 width: 100%;
+             }
+               
+            }
+        }
+    }
+}
+
+@media (max-width: 1170px) {
+    .topRated {
+        .topRatedContainer {
+            .titleContainer {
+              
+                h1 {
+                   font-size: 20px;
+                }
+                .titleLine {
+                    width: 50%;
+                }
+                p {
+                    font-size: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 645px) {
+    .topRated {
+        .topRatedContainer {
+            .titleContainer {
+              display: none;
+            }
+            .topContainer {
+                text-align: center;
+             margin-left: 50px;
+               
+            }
+        }
+    }
+}

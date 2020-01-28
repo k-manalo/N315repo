@@ -1,0 +1,33 @@
+.hero {
+    background-image: linear-gradient(to left, rgba(0,0,0,0),rgba(0,0,0,1)),url(../images/hero.jpg);
+    background-color: black;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .callout {
+        font-size: 30px;
+        margin-left: 115px;
+        font-style: italic;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+}
+
+@media (max-width: 645px) {
+    .hero {
+        height: 300px;
+        .callout {
+            margin-top: 60px;
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .hero {
+        height: 600px;
+    }
+}

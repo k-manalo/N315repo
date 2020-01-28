@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.75);
+}
+nav .linkContainer {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .linkContainer .logo h1 {
+  color: white;
+}
+nav .linkContainer .logo .line {
+  margin-top: -10px;
+  height: 2px;
+  width: 200px;
+  background-color: white;
+}
+nav .linkContainer .links {
+  float: right;
+  color: white;
+}
+nav .linkContainer .links a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 645px) {
+  .linkContainer {
+    flex-direction: column;
+  }
+  .linkContainer .logo {
+    text-align: center;
+  }
+  .linkContainer .links {
+    margin-bottom: 20px;
+  }
+}
+.hero {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), black), url(../images/hero.jpg);
+  background-color: black;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.hero .callout {
+  font-size: 30px;
+  margin-left: 115px;
+  font-style: italic;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+@media (max-width: 645px) {
+  .hero {
+    height: 300px;
+  }
+  .hero .callout {
+    margin-top: 60px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .hero {
+    height: 600px;
+  }
+}
+.topRated {
+  background-color: #5c3a1b;
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.topRated .topRatedContainer {
+  width: 85%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.topRated .topRatedContainer .titleContainer {
+  align-items: center;
+  width: 300px;
+}
+.topRated .topRatedContainer .titleContainer h1 {
+  color: white;
+  font-style: italic;
+}
+.topRated .topRatedContainer .titleContainer .titleLine {
+  margin-top: -10px;
+  height: 2px;
+  width: 200px;
+  background-color: white;
+}
+.topRated .topRatedContainer .titleContainer p {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+.topRated .topRatedContainer .topContainer h4 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.topRated .topRatedContainer .topContainer .hunterImage {
+  background-image: url(../images/top1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 650px;
+}
+.topRated .topRatedContainer .topContainer .NoCalImage {
+  background-image: url(../images/top2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 650px;
+}
+.topRated .topRatedContainer .topContainer .tranquilImage {
+  background-image: url(../images/top3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 650px;
+}
+
+@media (max-width: 1250px) {
+  .topRated .topRatedContainer {
+    width: 75%;
+  }
+  .topRated .topRatedContainer .titleContainer {
+    margin-right: 20px;
+  }
+  .topRated .topRatedContainer .topContainer {
+    width: 65%;
+  }
+  .topRated .topRatedContainer .topContainer h4 {
+    font-size: 15px;
+  }
+  .topRated .topRatedContainer .topContainer .hunterImage {
+    width: 100%;
+  }
+  .topRated .topRatedContainer .topContainer .NoCalImage {
+    width: 100%;
+  }
+  .topRated .topRatedContainer .topContainer .tranquilImage {
+    width: 100%;
+  }
+}
+@media (max-width: 1170px) {
+  .topRated .topRatedContainer .titleContainer h1 {
+    font-size: 20px;
+  }
+  .topRated .topRatedContainer .titleContainer .titleLine {
+    width: 50%;
+  }
+  .topRated .topRatedContainer .titleContainer p {
+    font-size: 80%;
+  }
+}
+@media (max-width: 645px) {
+  .topRated .topRatedContainer .titleContainer {
+    display: none;
+  }
+  .topRated .topRatedContainer .topContainer {
+    text-align: center;
+    margin-left: 50px;
+  }
+}
+.location {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/topCover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+.location .locationContainer {
+  width: 85%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.location .locationContainer .titleContainer h4 {
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+}
+.location .locationContainer .titleContainer .titleLine {
+  width: 400px;
+  height: 2px;
+  background-color: white;
+  margin-top: -10px;
+}
+.location .locationContainer .titleContainer .map {
+  margin-top: 10px;
+}
+.location .inputContainer {
+  margin-top: 40px;
+}
+.location .inputContainer h4 {
+  color: white;
+  font-size: 25px;
+  font-style: italic;
+}
+.location .inputContainer .titleLine {
+  width: 400px;
+  height: 2px;
+  background-color: white;
+  margin-top: -10px;
+}
+.location .inputContainer input {
+  width: 529px;
+  height: 60px;
+  font-size: 16px;
+  padding-left: 10px;
+  background-color: white;
+  border: 1px solid #5c3a1b;
+  color: white;
+  margin-bottom: 25px;
+  margin-left: 100px;
+}
+.location .inputContainer input:focus {
+  outline: none;
+}
+.location .inputContainer input::placeholder {
+  color: grey;
+}
+.location .inputContainer a {
+  text-decoration: none;
+}
+.location .inputContainer a .submit {
+  border: 2px solid white;
+  background-color: #208025;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 150px;
+}
+.location .inputContainer a .submit h5 {
+  margin-top: 13px;
+}
+
+@media (max-width: 1200px) {
+  .location .inputContainer input {
+    width: 75%;
+    margin-left: 40px;
+  }
+  .location .inputContainer a .submit {
+    width: 75%;
+    margin-left: 40px;
+  }
+}
+@media (max-width: 950px) {
+  .location .locationContainer .titleContainer {
+    display: none;
+  }
+  .location .inputContainer input {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 950px) {
+  .location .inputContainer h4 {
+    font-size: 12px;
+    display: none;
+  }
+  .location .inputContainer .titleLine {
+    width: 75%;
+    display: none;
+  }
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: #5c3a1b;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer .copyright {
+  align-items: center;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+}
