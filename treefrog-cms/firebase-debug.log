@@ -1,0 +1,116 @@
+[debug] [2020-02-17T21:48:33.181Z] ----------------------------------------------------------------------
+[debug] [2020-02-17T21:48:33.184Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kmana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-17T21:48:33.185Z] CLI Version:   7.12.1
+[debug] [2020-02-17T21:48:33.185Z] Platform:      win32
+[debug] [2020-02-17T21:48:33.185Z] Node Version:  v13.6.0
+[debug] [2020-02-17T21:48:33.186Z] Time:          Mon Feb 17 2020 16:48:33 GMT-0500 (Eastern Standard Time)
+[debug] [2020-02-17T21:48:33.186Z] ----------------------------------------------------------------------
+[debug] [2020-02-17T21:48:33.186Z] 
+[debug] [2020-02-17T21:48:33.202Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-17T21:48:33.202Z] > authorizing via signed-in user
+[debug] [2020-02-17T21:48:33.203Z] [iam] checking project treefrog-cms for permissions ["firebase.projects.get"]
+[debug] [2020-02-17T21:48:33.204Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-17T21:48:33.204Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-17T21:48:33.406Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-17T21:48:33.471Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/treefrog-cms:testIamPermissions  
+
+[debug] [2020-02-17T21:48:33.611Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-17T21:48:33.612Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms  
+ 
+[debug] [2020-02-17T21:48:33.737Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\kmana\Desktop\School\315\treefrog-cms'...
+[info] 
+[debug] [2020-02-17T21:48:34.550Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms/webApps/-/config  
+ 
+[debug] [2020-02-17T21:48:34.856Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-02-18T13:55:18.623Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T13:55:18.648Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kmana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-18T13:55:18.648Z] CLI Version:   7.12.1
+[debug] [2020-02-18T13:55:18.648Z] Platform:      win32
+[debug] [2020-02-18T13:55:18.648Z] Node Version:  v13.6.0
+[debug] [2020-02-18T13:55:18.849Z] Time:          Tue Feb 18 2020 08:55:18 GMT-0500 (Eastern Standard Time)
+[debug] [2020-02-18T13:55:18.849Z] ----------------------------------------------------------------------
+[debug] [2020-02-18T13:55:18.849Z] 
+[debug] [2020-02-18T13:55:18.964Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-18T13:55:18.965Z] > authorizing via signed-in user
+[debug] [2020-02-18T13:55:18.965Z] [iam] checking project treefrog-cms for permissions ["firebase.projects.get"]
+[debug] [2020-02-18T13:55:18.967Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-18T13:55:18.967Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-18T13:55:19.342Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-18T13:55:19.395Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/treefrog-cms:testIamPermissions  
+
+[debug] [2020-02-18T13:55:19.511Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-18T13:55:19.515Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms  
+ 
+[debug] [2020-02-18T13:55:19.634Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\kmana\Desktop\School\315\treefrog-cms'...
+[info] 
+[debug] [2020-02-18T13:55:19.662Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms/webApps/-/config  
+ 
+[debug] [2020-02-18T13:55:19.944Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-02-24T04:54:49.121Z] ----------------------------------------------------------------------
+[debug] [2020-02-24T04:54:49.131Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kmana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-24T04:54:49.131Z] CLI Version:   7.12.1
+[debug] [2020-02-24T04:54:49.131Z] Platform:      win32
+[debug] [2020-02-24T04:54:49.131Z] Node Version:  v13.6.0
+[debug] [2020-02-24T04:54:49.288Z] Time:          Sun Feb 23 2020 23:54:49 GMT-0500 (Eastern Standard Time)
+[debug] [2020-02-24T04:54:49.288Z] ----------------------------------------------------------------------
+[debug] [2020-02-24T04:54:49.288Z] 
+[debug] [2020-02-24T04:54:49.346Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-24T04:54:49.346Z] > authorizing via signed-in user
+[debug] [2020-02-24T04:54:49.347Z] [iam] checking project treefrog-cms for permissions ["firebase.projects.get"]
+[debug] [2020-02-24T04:54:49.349Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-24T04:54:49.349Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-24T04:54:49.567Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-24T04:54:49.602Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/treefrog-cms:testIamPermissions  
+
+[debug] [2020-02-24T04:54:49.829Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-24T04:54:49.830Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms  
+ 
+[debug] [2020-02-24T04:54:50.090Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\kmana\Desktop\School\315\treefrog-cms'...
+[info] 
+[debug] [2020-02-24T04:54:50.117Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms/webApps/-/config  
+ 
+[debug] [2020-02-24T04:54:50.584Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2020-02-25T05:02:00.322Z] ----------------------------------------------------------------------
+[debug] [2020-02-25T05:02:00.323Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kmana\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2020-02-25T05:02:00.324Z] CLI Version:   7.12.1
+[debug] [2020-02-25T05:02:00.324Z] Platform:      win32
+[debug] [2020-02-25T05:02:00.324Z] Node Version:  v13.6.0
+[debug] [2020-02-25T05:02:00.325Z] Time:          Tue Feb 25 2020 00:02:00 GMT-0500 (Eastern Standard Time)
+[debug] [2020-02-25T05:02:00.325Z] ----------------------------------------------------------------------
+[debug] [2020-02-25T05:02:00.325Z] 
+[debug] [2020-02-25T05:02:00.368Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-25T05:02:00.369Z] > authorizing via signed-in user
+[debug] [2020-02-25T05:02:00.369Z] [iam] checking project treefrog-cms for permissions ["firebase.projects.get"]
+[debug] [2020-02-25T05:02:00.371Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-25T05:02:00.372Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-25T05:02:00.565Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-25T05:02:00.599Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/treefrog-cms:testIamPermissions  
+
+[debug] [2020-02-25T05:02:00.812Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-25T05:02:00.813Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms  
+ 
+[debug] [2020-02-25T05:02:01.011Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\kmana\Desktop\School\315\treefrog-cms'...
+[info] 
+[debug] [2020-02-25T05:02:01.013Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/treefrog-cms/webApps/-/config  
+ 
+[debug] [2020-02-25T05:02:01.565Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000

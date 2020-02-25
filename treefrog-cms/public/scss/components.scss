@@ -1,0 +1,113 @@
+#mNavName {
+  margin-bottom: 200px;
+}
+
+.main-nav {
+
+}
+
+.labelHolder {
+ 
+  height: 50px;
+  justify-content: center;
+      
+  
+}
+.btn {
+  border-radius: 10px;
+  height: 50px;
+  padding: 20px 50px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 100px;
+  text-align: center;
+}
+
+.btn-holder {
+
+  display: flex;
+  height: 75px;
+}
+.btn-holder2 {
+  display: flex;
+  display: none;
+}
+
+.btn-dark {
+  background-color: #393c40;
+  color: $white-color;
+}
+
+.btn-light {
+  text-align: center;
+  background-color: #f2dcc9;
+  color: #393c40;
+  height: 50px;
+  width: 200px;
+    padding: 20px 20px;
+  
+}
+
+.cmn-button {
+  margin-left: 50px;
+}
+
+#editor-container {
+ 
+  height: 200px;
+  width: 100%;
+}
+
+.modal {
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  display: flex;
+  display: none;
+
+
+  .clickBox {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+    background-color: rgba($white-color, 0.5);
+
+    .closeX {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 50px;
+      cursor: pointer;
+      color: $dark-color;
+      
+    }
+   }
+  .alert-box {
+   position: absolute;
+   margin-left: 450px;
+   margin-top: 150px;
+    width: 600px;
+    height: 350px;
+    background-color: $dark-color;
+  padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+
+    border-radius: 10px;
+    text-align: center;
+    
+    h2 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+}

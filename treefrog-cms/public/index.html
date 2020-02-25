@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Treefrog | CMS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="left-nav-holder">
+        <div id="home" class="link-holder">
+          <a href="#">HOME</a>
+          <div class="active-box active"></div>
+        </div>
+        <div id="addNav" class="link-holder get-started">
+          <a href="#">add navigation</a>
+          <div class="active-box"></div>
+        </div>
+        <div id="editNav" class="link-holder">
+          <a href="#">edit navigation</a>
+          <div class="active-box"></div>
+        </div>
+        <div id="deleteNav" class="link-holder">
+          <a href="#">delete navigation</a>
+          <div class="active-box"></div>
+        </div>
+      </div>
+      <div class="right-nav-holder">
+        <a id="preview" href="#">preview site</a>
+      </div>
+    </nav>
+
+   
+
+    <div class="content-wrapper">
+      <div class="text-wrapper">
+        <h1>Welcome to the Treefrog CMS</h1>
+        <p>
+          Here you will create your content for your webpages. You won't be able
+          to create all page elements but only the content for the page.
+        </p>
+
+        <p>
+          You must first create the navigation. Once you have the navigation
+          created you can add page content and publish the page. You can even
+          add sub navigation as well.
+        </p>
+
+        <p>
+          Your fist step is to click on the Add Navigation link and add your
+          first navigation link.
+        </p>
+       
+      </div>
+   
+      <div class="btn-holder">
+        <span class="btn btn-dark get-started">Get Started</span>
+      </div>
+      
+    <div id="editor-container"></div>
+
+    </div>
+
+    <div class="modal">
+      <div class="clickBox closeModal">
+        <div class="closeX">
+          X
+        </div>
+      </div>
+      <div class="alert-box">
+        
+      </div>
+    </div>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.8.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.8.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.8.0/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.8.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <!-- Quill -->
+    <link href="https://cdn.quilljs.com/1.1.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.1.6/quill.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="app/service.js"></script>
+    <script src="app/app.js"></script>
+    
+  <script>
+    /*
+    console.log("Quill Open")
+  var quill = new Quill('#editor-container', {
+   modules: {
+       toolbar: [
+       ["bold", "italic", "underline", "strike"],
+       ["blockquote", "code-block"],
+       [{header: 1}, {header: 2}],
+       [{list: "ordered"}, {list: "bullet"}],
+       [{script: "sub"}, {script: "super"}],
+       [{indent: "-1"}, {indent:"+1"}],
+       [{direction: "rt1"}],
+       [{size: ["small", false, "large", "huge"]}],
+       [{header: [1, 2, 3, 4, 5, 6, false]}],
+       [{color: []}, {background: []}],
+       [{font: []}],
+       [{align: []}],
+       ["clean"]
+       ]
+   },
+   placeholder: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut maxime ipsum ipsa fuga nostrum natus pariatur neque officiis delectus explicabo minima temporibus repellat iusto laudantium atque maiores, quibusdam expedita!",
+   theme: "snow"
+   })
+*/
+  
+
+    
+  </script>
+  </body>
+</html>
