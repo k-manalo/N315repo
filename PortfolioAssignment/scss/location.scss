@@ -1,0 +1,151 @@
+.location {
+    background-image: linear-gradient(
+        to right,
+        rgba(black, 0.75),
+        rgba(black, 0.75)
+      ), url(../images/location.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    .locationContainer {
+        width: 85%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+       
+        .titleContainer {
+            h4 {
+                color: white;
+                font-size: 25px;
+                font-style: italic;
+            }
+            .titleLine {
+                width: 400px;
+                height: 2px;
+                background-color: rgb(214, 162, 50);
+                margin-top: -10px;
+            }
+            .map {
+                margin-top: 10px;
+            }
+        }
+    }
+    .inputContainer {
+      margin-top: -50px;
+      h4 {
+        color: white;
+        font-size: 25px;
+        font-style: italic;
+    }
+    #zipcode {
+        width: 350px;
+    }
+    #cabin {
+        width: 150px;
+        margin-left: 25px;
+    }
+    .titleLine {
+        width: 400px;
+        height: 2px;
+        background-color: white;
+        margin-top: -10px;
+    }
+        input {
+            border-radius: 20px;
+            width: 529px;
+            height: 60px;
+            font-size: 16px;
+            padding-left: 10px;
+            background-color: white;
+            border: 1px solid grey;
+            color: white;
+            margin-bottom: 25px;
+            margin-left: 100px;
+            &:focus {
+              outline: none;
+            }
+        
+            &::placeholder {
+              color: grey;
+            }
+          }
+          a {
+            text-decoration: none;
+            .submit {
+                border: 2px solid white;
+                background-color: rgba(139, 156, 240));
+                width: 200px;
+                height: 50px;
+                color: white;
+                font-size: 20px;
+                text-align: center;
+                margin-left: 100px;
+                margin-top: 50px;
+                border-radius: 20px;
+                h5 {
+                    
+                  margin-top: 13px;
+                }
+                
+            }
+          }
+          
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .location {
+        .inputContainer {
+          
+            input {
+                width: 75%;
+                margin-left: 40px;
+            }
+            a {
+                .submit {
+                    width: 75%;
+                    margin-left: 40px;
+                }
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .location {
+        
+        .locationContainer {
+            .titleContainer {
+                display: none;
+            }
+        }
+        .inputContainer {
+           input {
+            margin-top: 20px;
+           }
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    .location {
+        .inputContainer {
+            h4 {
+                font-size: 12px;
+                display: none;
+            }
+            .titleLine {
+                width: 75%;
+                display: none;
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,65 @@
+.ratings {
+  height: 50%;
+  width: 100%;
+}
+.ratings .ratings-container {
+  padding-top: 75px;
+  justify-content: center;
+  display: flex;
+  height: 100px;
+  width: 100%;
+}
+.ratings .ratings-container .rating1 {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+.ratings .ratings-container .rating1 h3 {
+  font-style: italic;
+}
+.ratings .ratings-container .rating1 .ratingimg {
+  background-image: url(../images/stars.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 100%;
+}
+.ratings .ratings-container .rating2 {
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 200px;
+  width: 400px;
+  text-align: center;
+}
+.ratings .ratings-container .rating2 h3 {
+  font-size: 25px;
+  font-style: italic;
+}
+.ratings .ratings-container .rating2 h4 {
+  font-size: 25px;
+}
+.ratings .ratings-container .rating2 .ratingimg {
+  background-image: url(../images/stars.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+}
+.ratings .ratings-container .rating3 {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+}
+.ratings .ratings-container .rating3 h3 {
+  font-style: italic;
+}
+.ratings .ratings-container .rating3 .ratingimg {
+  background-image: url(../images/stars.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 100%;
+}

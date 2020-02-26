@@ -1,0 +1,29 @@
+.quote {
+  background-color: black;
+  height: 56%;
+  width: 100%;
+  font-size: 18px;
+  margin: 10 auto;
+  text-align: center;
+}
+.quote .quote-container {
+  margin-top: 400px;
+  height: 100px;
+  padding-top: 50px;
+  color: white;
+  margin: auto;
+}
+.quote .quote-container h3 {
+  font-style: italic;
+}
+.quote .quote-container h4 {
+  font-family: "Times New Roman", Times, serif;
+}
+.quote .quoteimg {
+  background-image: url(../images/quoteimg.jpg);
+  margin-top: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 265px;
+}

@@ -1,0 +1,85 @@
+.topRated {
+  background-image: linear-gradient(to left, rgba(40, 46, 75, 0.95), rgba(139, 156, 240, 0.65)), url(../images/productsBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #282e4b;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.topRated .topRatedTitle {
+  height: 100px;
+  margin-top: 50px;
+}
+.topRated .topRatedTitle h2 {
+  font-size: 40px;
+  margin-bottom: -20px;
+  color: white;
+  font-style: italic;
+}
+.topRated .topRatedTitle .line {
+  margin-top: 25px;
+  height: 3px;
+  width: 330px;
+  text-align: center;
+  background-color: #d6a232;
+}
+.topRated .voyages {
+  margin-top: 50px;
+  display: flex;
+}
+.topRated .voyages .ship1 .shipTitle {
+  color: white;
+}
+.topRated .voyages .ship1 .shipimg {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.75), black), url(../images/ship1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 375px;
+  left: 0px;
+}
+.topRated .voyages .ship1 .shipDetails {
+  display: none;
+}
+.topRated .voyages .ship1 .shipDetails h4 {
+  color: white;
+}
+.topRated .voyages .ship2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.topRated .voyages .ship2 .shipTitle {
+  color: white;
+}
+.topRated .voyages .ship2 .shipimg {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.75), black), url(../images/ship2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 375px;
+  left: 0px;
+}
+.topRated .voyages .ship2 .shipDetails h4 {
+  display: none;
+  color: white;
+}
+.topRated .voyages .ship3 .shipTitle {
+  color: white;
+}
+.topRated .voyages .ship3 .shipimg {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.75), black), url(../images/ship3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 375px;
+  left: 0px;
+}
+.topRated .voyages .ship3 .shipDetails h4 {
+  display: none;
+  color: white;
+}
