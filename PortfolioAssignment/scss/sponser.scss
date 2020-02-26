@@ -1,0 +1,64 @@
+.sponser {
+  height: 50%;
+  width: 100%;
+  .sponser-container {
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h2 {
+        color: rgb(214, 162, 50);
+        font-style: italic;
+        text-align: center;
+      }
+      .line {
+        margin-top: -30px;
+        border-radius: 200px;
+        align-items: center;
+        border-bottom: 3px solid grey;
+        height: 40px;
+        width: 1000px;
+        margin-bottom: 30px;
+      }
+    }
+    .logo-container {
+      padding-left: 100px;
+      padding-right: 100px;
+      display: flex;
+      justify-content: space-between;
+      .nasa {
+        background-image: url(../images/nasa.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+      }
+      .esa {
+        background-image: url(../images/esa.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 175px;
+      }
+      .spaceX {
+        background-image: url(../images/spacex.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 250px;
+      }
+      .blueorigin {
+        background-image: url(../images/blueorigin.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 250px;
+      }
+    }
+  }
+}

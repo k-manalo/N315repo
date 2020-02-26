@@ -1,74 +1,68 @@
 .ratings {
-    height: 50%;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  .ratings-container {
+    justify-content: center;
+    display: flex;
+    height: 100%;
     width: 100%;
-    .ratings-container {
-        padding-top: 75px;
-        justify-content: center;
-        display: flex;
-        height: 100px;
+    .rating1 {
+      height: 200px;
+      width: 200px;
+      text-align: center;
+      h3 {
+        font-style: italic;
+      }
+      .ratingimg {
+        background-image: url(../images/stars.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        height: 40px;
         width: 100%;
-        .rating1 {
-            height:200px;
-            width: 200px;
-            text-align: center;
-            h3 {
-                font-style: italic;
-            }
-            .ratingimg {
-               
-                background-image: url(../images/stars.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                
-                height: 40px;
-                width: 100%;
-                
-            }
-        }
-        .rating2 {
-            margin-left: 100px;
-            margin-right: 100px;
-            height:200px;
-            width: 400px;
-            text-align: center;
-            h3 {
-                font-size: 25px;
-                font-style: italic;
-            }
-            h4 {
-                font-size: 25px;
-            }
-            .ratingimg {
-               
-                background-image: url(../images/stars.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                
-                height: 50px;
-                width: 100%;
-                
-            }
-        }
-        .rating3 {
-            height:200px;
-            width: 200px;
-            text-align: center;
-            h3 {
-                font-style: italic;
-            }
-            .ratingimg {
-               
-                background-image: url(../images/stars.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                
-                height: 40px;
-                width: 100%;
-                
-            }
-        }
+      }
     }
+    .rating2 {
+      margin-left: 100px;
+      margin-right: 100px;
+      height: 200px;
+      width: 400px;
+      text-align: center;
+      h3 {
+        font-size: 25px;
+        font-style: italic;
+      }
+      h4 {
+        font-size: 25px;
+      }
+      .ratingimg {
+        background-image: url(../images/stars.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        height: 50px;
+        width: 100%;
+      }
+    }
+    .rating3 {
+      height: 200px;
+      width: 200px;
+      text-align: center;
+      h3 {
+        font-style: italic;
+      }
+      .ratingimg {
+        background-image: url(../images/stars.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        height: 40px;
+        width: 100%;
+      }
+    }
+  }
 }

@@ -1,0 +1,206 @@
+.products {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      to left,
+      rgba(40, 46, 75, 0.95),
+      rgba(0, 0, 0, 0.95)
+    ),
+    url(../images/products.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(40, 46, 75);
+  display: flex;
+  justify-content: center;
+  .productsTitle {
+    margin-top: 50px;
+    background-image: url(../images/mars.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 125px;
+    width: 75%;
+    h2 {
+      margin-left: 30px;
+      font-size: 40px;
+      margin-bottom: -20px;
+      color: white;
+      font-style: italic;
+    }
+    .line {
+      margin-left: 30px;
+      margin-top: 25px;
+      height: 3px;
+      width: 330px;
+
+      text-align: center;
+      background-color: rgb(139, 156, 240);
+    }
+  }
+  .row1 {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    .p1 {
+      display: flex;
+      flex-direction: column;
+      .p1img {
+        background-image: url(../images/suit.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+      }
+      .p1content {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 65px;
+        width: 150px;
+
+        text-align: center;
+        .line {
+          background-color: grey;
+          width: 75px;
+          height: 2px;
+        }
+        h4 {
+          font-style: italic;
+          color: white;
+        }
+      }
+    }
+    .p2 {
+      display: flex;
+      flex-direction: column;
+      .p2img {
+        background-image: url(../images/rover.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+      }
+      .p2content {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 65px;
+        width: 150px;
+
+        text-align: center;
+        .line {
+          background-color: grey;
+          width: 75px;
+          height: 2px;
+        }
+        h4 {
+          font-style: italic;
+          color: white;
+        }
+      }
+    }
+    .p3 {
+      display: flex;
+      flex-direction: column;
+      .p3img {
+        background-image: url(../images/medial.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+      }
+      .p3content {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 65px;
+        width: 150px;
+
+        text-align: center;
+        .line {
+          background-color: grey;
+          width: 75px;
+          height: 2px;
+        }
+        h4 {
+          font-style: italic;
+          color: white;
+        }
+      }
+    }
+    .p4 {
+      display: flex;
+      flex-direction: column;
+      .p4img {
+        background-image: url(../images/solar.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+      }
+      .p4content {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 65px;
+        width: 150px;
+
+        text-align: center;
+        .line {
+          background-color: grey;
+          width: 75px;
+          height: 2px;
+        }
+        h4 {
+          font-style: italic;
+          color: white;
+        }
+      }
+    }
+    .p5 {
+      display: flex;
+      flex-direction: column;
+      .p5img {
+        background-image: url(../images/drone.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+      }
+      .p5content {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 65px;
+        width: 150px;
+
+        text-align: center;
+        .line {
+          background-color: grey;
+          width: 75px;
+          height: 2px;
+        }
+        h4 {
+          font-style: italic;
+          color: white;
+        }
+      }
+    }
+  }
+  .more {
+    border: 2px solid white;
+    background-color: rgb(139, 156, 240);
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 50px;
+    border-radius: 20px;
+    h5 {
+      margin-top: 13px;
+    }
+  }
+  .products-container {
+  }
+}

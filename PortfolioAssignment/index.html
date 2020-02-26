@@ -1,176 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PORTFOLIO ASSIGNMENT</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
     <script></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <div class="linkContainer">
-            <div class="logo"></div>
-            <div class="siteTitle">
-                
-                <div class="line">
-                    <h1>
-                    ASTROGATE SPACE TOURISM
-                    </h1>
-                </div>
-            </div>
-            
-            <div class="links">
-              <a href="#">HOME</a><span> | </span>
-                
-                <a href="#">ABOUT</a><span> | </span>
-                <a href="#">VOYAGES</a><span> | </span>
-                <a href="#">LOGIN/SIGNUP</a>
-            </div>
-        </div>
-    </nav>
-    <div class="hero">
-        <div class="callout">
-            <h1>EXPERIENCE</h1>
-            <h2>THE FINAL FRONTIER</h2>
-           
-        </div>
-    </div>
-    <div class="quote">
-        <div class="quote-container">
-            <h3>"Imagination will often carry us to worlds that never were. But without it we go nowhere."</h3>
-            <h4>-Carl Sagan</h4>
-        </div>
-        
-        <div class="quoteimg"></div>
-    </div>
-    <div class="topRated">
-        <div class="topRatedTitle">
-            
-                <h2>Top Rated Voyages</h2>
-                <div class="line"></div>
-            <div class="voyages">
-                <div class="ship1">
-                    <div class="shipTitle">
-                        <h3><span>-{</span> MOON SHUTTLE <span>}-</span></h3>
-                        
-                    </div>
-                    <div class="shipimg">
-                        <div class="shipDetails">
-                            <h4>Price: $7,500 USD</h4>
-                            <h4>Trip Duration: 3 Days</h4>
-                            <h4>Destinations: Moon</h4>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="ship2">
-                    <div class="shipTitle">
-                        <h3><span>-{</span> MARS MISSION <span>}-</span></h3>
-                        
-                    </div>
-                    <div class="shipimg">
-                        <div class="shipDetails">
-                            <h4>Price: $20,800 USD</h4>
-                            <h4>Trip Duration: 2 Weeks</h4>
-                            <h4>Destinations: Mars, Europa, Pluto</h4>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="ship3">
-                    <div class="shipTitle">
-                        <h3><span>-{</span> ANDROMEDA VOYAGE <span>}-</span></h3>
-                        
-                    </div>
-                    <div class="shipimg">
-                        <div class="shipDetails">
-                            <h4>Price: $102,100 USD</h4>
-                            <h4>Trip Duration: 1 Year</h4>
-                            <h4>Destinations: Andromeda Galaxy</h4>
-                        </div>
-                    </div>
-                    
-                </div>
+      <div class="linkContainer">
+        <div class="links">
+          <a href="#">HOME</a><span> | </span>
 
-            </div>
-           
+          <a href="#">ABOUT</a><span> | </span><a href="#">PRODUCTS</a>
+          <span> | </span><a href="#">VOYAGES</a><span> | </span
+          ><a href="#">DESTINATIONS</a><span> | </span>
+          <a href="#">LOGIN/SIGNUP</a>
         </div>
-        
+      </div>
+    </nav>
+    <div class="navBackground"></div>
+    <div class="topNav">
+      <div class="nav-container">
+        <div class="logo"></div>
+        <div class="siteTitle">
+          <div class="line">
+            <h1>
+              ASTROGATE SPACE TOURISM
+            </h1>
+          </div>
+        </div>
+        <div class="input-container">
+          <i
+            class="fas fa-search"
+            style="color: white; margin-right: 10px;"
+          ></i>
+          <input
+            id="search"
+            type="text"
+            name="search"
+            placeholder="Search…"
+            style="border-radius: 5px;"
+          />
+        </div>
+        <div class="cart-container">
+          <i class="fas fa-shopping-cart" style="color: white;"></i>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="callout">
+        <h1>EXPERIENCE<br /></h1>
+        <h2>THE FINAL FRONTIER</h2>
+        <div class="enter-container">
+          <div class="enterArrow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quote">
+      <div class="quote-container">
+        <h3>
+          "Imagination will often carry us to worlds that never were. But
+          without it we go nowhere."
+        </h3>
+        <h4>-Carl Sagan</h4>
+      </div>
+
+      <div class="quoteimg"></div>
+    </div>
+
+    <div class="topRated">
+      <div class="topRatedTitle">
+        <h2>Top Rated Voyages</h2>
+        <div class="line"></div>
+        <div class="voyages">
+          <div class="ship1">
+            <div class="shipTitle">
+              <h3><span>-{</span> MOON SHUTTLE <span>}-</span></h3>
+            </div>
+            <div class="shipimg1"></div>
+            <div class="shipDetails">
+              <h4>
+                Price: $7,500 USD<br />Trip Duration: 3 Days<br />Destinations:
+                Moon
+              </h4>
+            </div>
+          </div>
+          <div class="ship2">
+            <div class="shipTitle">
+              <h3><span>-{</span> MARS MISSION <span>}-</span></h3>
+            </div>
+            <div class="shipimg2"></div>
+            <div class="shipDetails">
+              <h4>
+                Price: $20,800 USD<br />Trip Duration: 2 Months<br />Destinations:
+                Mars
+              </h4>
+            </div>
+          </div>
+          <div class="ship3">
+            <div class="shipTitle">
+              <h3><span>-{</span> ANDROMEDA VOYAGE <span>}-</span></h3>
+            </div>
+            <div class="shipimg3"></div>
+            <div class="shipDetails">
+              <h5>
+                Price: $102,100 USD<br />Trip Duration: 1 Years<br />Destinations:
+                Andromeda Galaxy
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="ratings">
-        <div class="ratings-container">
-            <div class="rating1">
-                <h3>"Just an FYI:Within two minutes of flight, the Shuttle’s air-speed exceeds that of a bullet fired from an M16 assault rifle."</h3>
-                <h4>- Neil Degrasse Tyson, Astrophysicist</h4>
-                <div class="ratingimg"></div>
-            </div>
-            <div class="rating2">
-                <h3>"A once in a lifetime experience. A voyage with Astrogate should be at the top of every space enthusiasts bucketlist!"</h3>
-                <h4>- Star Gazer Magazine</h4>
-                <div class="ratingimg"></div>
-            </div>
-            <div class="rating3">
-                <h3>"Humanity has finally achieved what we were destined to do. From the beginning of the space age to the present. We are Victorious!"</h3>
-                <h4>- Lauren Godfrey, Frequent Voyager</h4>
-                <div class="ratingimg"></div>
-            </div>
+      <div class="ratings-container">
+        <div class="rating1">
+          <h3>
+            "Just an FYI:Within two minutes of flight, the Shuttle’s air-speed
+            exceeds that of a bullet fired from an M16 assault rifle."
+          </h3>
+          <h4>- Neil Degrasse Tyson, Astrophysicist</h4>
+          <div class="ratingimg"></div>
         </div>
+        <div class="rating2">
+          <h3>
+            "A once in a lifetime experience. A voyage with Astrogate should be
+            at the top of every space enthusiasts bucketlist!"
+          </h3>
+          <h4>- Star Gazer Magazine</h4>
+          <div class="ratingimg"></div>
+        </div>
+        <div class="rating3">
+          <h3>
+            "Humanity has finally achieved what we were destined to do. From the
+            beginning of the space age to the present. We are Victorious!"
+          </h3>
+          <h4>- Lauren Godfrey, Frequent Voyager</h4>
+          <div class="ratingimg"></div>
+        </div>
+      </div>
     </div>
     <div class="location">
-        <div class="locationContainer">
-            
-            <div class="inputContainer">
-                
-                
-                <div class="titleLine"></div>
-                <input
-                type="country"
-                name="country"
-                placeholder="Country…"
-                />
-                <input
-                    
-                    type="text"
-                    name="state"
-                    placeholder="State…"
-                />
-                <input
-                    id="zipcode"
-                    type="zipcode"
-                    name="zipcode"
-                    placeholder="Zipcode…"
-                />
-                <input
-                    id="cabin"
-                    type="number"
-                    name="cabinSize"
-                    placeholder="Cabin Size…"
-                />
-                <a href="#">
-                    <div class="submit">
-                        <h5>SEARCH</h5>
-                    </div>
-                </a>
+      <div class="locationContainer">
+        <div class="inputContainer">
+          <div class="titleLine"></div>
+          <input
+            id="country"
+            type="country"
+            name="country"
+            placeholder="Country…"
+          />
+          <input id="state" type="text" name="state" placeholder="State…" />
+          <input
+            id="zipcode"
+            type="zipcode"
+            name="zipcode"
+            placeholder="Zipcode…"
+          />
+          <input
+            id="cabin"
+            type="number"
+            name="cabinSize"
+            placeholder="Cabin Size…"
+          />
+          <a href="#">
+            <div class="submit">
+              <h5>SEARCH</h5>
             </div>
-            <div class="titleContainer">
-                <h4>LOCATE AN ASTROGATE</h4>
-                <div class="titleLine"></div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2740961844!2d-118.69192387726386!3d34.020161298816866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1582700474077!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-            </div>
+          </a>
         </div>
-        
+        <div class="titleContainer">
+          <h4>LOCATE AN ASTROGATE</h4>
+          <div class="titleLine"></div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.2740961844!2d-118.69192387726386!3d34.020161298816866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA!5e0!3m2!1sen!2sus!4v1582700474077!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border:0;"
+              allowfullscreen=""
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sponser">
+      <div class="sponser-container">
+        <div class="title-container">
+          <h2>Proud Partners</h2>
+          <div class="line"></div>
+        </div>
+        <div class="logo-container">
+          <div class="nasa"></div>
+          <div class="spaceX"></div>
+          <div class="esa"></div>
+          <div class="blueorigin"></div>
+        </div>
+      </div>
+    </div>
+    <div class="products">
+      <div class="productsTitle">
+        <h2>Travel Gear</h2>
+        <div class="line"></div>
+        <div class="row1">
+          <div class="p1">
+            <div class="p1img"></div>
+            <div class="p1content">
+              <h4>Space Suit<br />$499.99</h4>
+            </div>
+          </div>
+          <div class="p2">
+            <div class="p2img"></div>
+            <div class="p2content">
+              <h4>Rover<br />1199.99</h4>
+            </div>
+          </div>
+          <div class="p3">
+            <div class="p3img"></div>
+            <div class="p3content">
+              <h4>Medical Supplies<br />$49.99</h4>
+            </div>
+          </div>
+          <div class="p4">
+            <div class="p4img"></div>
+            <div class="p4content">
+              <h4>Solar<br />$999.99</h4>
+            </div>
+          </div>
+          <div class="p5">
+            <div class="p5img"></div>
+            <div class="p5content">
+              <h4>Drone<br />$299.99</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mission">
+      <div class="missionTitle">
+        <h4>MISSION STATEMENT</h4>
+        <div class="missionLine"></div>
+        <div class="missionContent">
+          <div class="missionimg"></div>
+          <div class="missionStatement">
+            <p>
+              This website is built for a client that wants to promote and sell
+              space travel at a commercial level. Astrogate will allow users to
+              browse a variety of voyages that travel through space similar to
+              modern day cruise lines. Users will also be able to locate the
+              nearest port to them using the map section. The site also sells a
+              variety of space travel equipment that one might need when
+              traversing the universel. This prototype demonstrates the intent
+              for users to be able to create an account to manage their shopping
+              experience much easier. The main color themes are blue/purple
+              representing deep space, as well as orange in order to contrast
+              the former colors. Because the main page is rather long I decided
+              to keep the main navigation bar fixed the top of the screen. There
+              is also a FAQ section for usability purposes. The site them could
+              be considered niche, but I made it my goal to create something
+              that stands out.
+            </p>
+            <h3>- Kyle Manalo</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-container">
+        <div class="title"><h3>FAQ</h3></div>
+        <div class="line"></div>
+        <div class="faqContent">
+          <h5>
+            Do I need an insurance plan?<br />How many passengers can I bring?
+            <br />Will I still be able to contact Earth?<br />Do I need a
+            passport?<br />What items am I able to bring?<br />Do I need
+            vaccinations?<br />Can I bring pets with me?<br />Does Astrogate
+            offer payment plans?<br />Do your facilities offer parking services?
+          </h5>
+        </div>
+      </div>
+      <div class="help-container">
+        <div class="title"><h3>HELP</h3></div>
+        <div class="line"></div>
+        <div class="helpContent">
+          <h5>
+            Subscriptions<br />Forgot Login or Passowrd <br />Site Map<br />Terms
+            and Conditions<br />Waiver<br />Payment Plans<br />Human
+            Resources<br />Careers<br />Astrogate Tuition Grant
+          </h5>
+        </div>
+      </div>
     </div>
     <div class="footer">
-        <div class="copyright">
-            <p>
-                Copyright © 2020
-            </p>
+      <div class="logo"></div>
+      <div class="copyright">
+        <p>
+          Copyright Astrogate.co © 2020
+        </p>
+      </div>
+      <div class="social">
+        <div class="fb">
+          <i class="fab fa-facebook-f" style="color: white;"></i>
         </div>
+        <div class="twitter">
+          <i class="fab fa-twitter" style="color: white;"></i>
+        </div>
+        <div class="instagram">
+          <i class="fab fa-instagram-square" style="color: white;"></i>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,122 +1,132 @@
 .topRated {
-    background-image: linear-gradient(to left,rgba(40, 46, 75, .95), rgba(139, 156, 240, 0.65)),url(../images/productsBackground.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(40, 46, 75);
-    height: 100%;
-    width: 100%;
-   display: flex;
-   justify-content: center;
+  background-image: linear-gradient(
+      to left,
+      rgba(40, 46, 75, 0.95),
+      rgba(139, 156, 240, 0.65)
+    ),
+    url(../images/productsBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(40, 46, 75);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
-
-   .topRatedTitle {
-    
+  .topRatedTitle {
     height: 100px;
-    margin-top: 50px;
-        
-            h2 {
-                font-size: 40px;
-                margin-bottom: -20px;
-                color: white;
-                font-style: italic;
-            }
+    margin-top: -5px;
 
-            .line {
-                margin-top: 25px;
-                height: 3px;
-                width: 330px;
-                
-                text-align: center;
-                background-color: rgb(214, 162, 50);
-             }
+    h2 {
+      font-size: 40px;
+      margin-bottom: -20px;
+      color: white;
+      font-style: italic;
     }
 
-    .voyages {
-        margin-top: 50px;
-        display: flex;
-        .ship1 {
-            .shipTitle {
-                color: white;
-                
-               
-            }
-            .shipimg {
-                background-image: linear-gradient(to left, rgba(0,0,0,.75),rgba(0,0,0,1)),url(../images/ship1.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 400px;
-                width: 375px;
-                left: 0px;
-            }
-            .shipDetails {
-                display: none;
-                h4 {
-                    color: white;
-                }
-            }
+    .line {
+      margin-top: 25px;
+      height: 3px;
+      width: 330px;
+
+      text-align: center;
+      background-color: rgb(214, 162, 50);
+    }
+  }
+
+  .voyages {
+    display: flex;
+    .ship1 {
+      .shipTitle {
+        color: white;
+      }
+      .shipimg1 {
+        background-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0)
+          ),
+          url(../images/ship1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 300px;
+        width: 375px;
+        left: 0px;
+      }
+      .shipDetails {
+        border-radius: 5px;
+        width: 175px;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.65);
+        h4 {
+          padding: 5px;
+          color: white;
         }
-        .ship2 {
-            margin-left: 10px;
-            margin-right: 10px;
-            .shipTitle {
-                color: white;
-                
-            }
-            .shipimg {
-                background-image: linear-gradient(to left, rgba(0,0,0,.75),rgba(0,0,0,1)),url(../images/ship2.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 400px;
-                width: 375px;
-                left: 0px;
-            }
-            .shipDetails {
-                h4 {
-                    display: none;
-                    color: white;
-                }
-            }
+      }
+    }
+    .ship2 {
+      margin-left: 10px;
+      margin-right: 10px;
+      .shipTitle {
+        color: white;
+      }
+      .shipimg2 {
+        background-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0)
+          ),
+          url(../images/ship2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 300px;
+        width: 375px;
+        left: 0px;
+      }
+      .shipDetails {
+        border-radius: 5px;
+        width: 175px;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.65);
+        h4 {
+          padding: 5px;
+          color: white;
         }
-        .ship3 {
-            .shipTitle {
-                color: white;
-            }
-            .shipimg {
-                background-image: linear-gradient(to left, rgba(0,0,0,.75),rgba(0,0,0,1)),url(../images/ship3.jpg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 400px;
-                width: 375px;
-                left: 0px;
-            }
-            .shipDetails {
-                h4 {
-                    display: none;
-                    color: white;
-                }
-            }
+      }
+    }
+    .ship3 {
+      .shipTitle {
+        color: white;
+      }
+      .shipimg3 {
+        background-image: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0)
+          ),
+          url(../images/ship3.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+        height: 300px;
+        width: 375px;
+        left: 0px;
+      }
+      .shipDetails {
+        border-radius: 5px;
+        width: 175px;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.65);
+        h5 {
+          padding: 5px;
+          color: white;
         }
+      }
     }
-}
-
-
-@media (max-width: 1250px) {
-    .topRated {
-        
-    }
-}
-
-@media (max-width: 1170px) {
-    .topRated {
-       
-    }
-}
-
-@media (max-width: 645px) {
-    .topRated {
-      
-    }
+  }
 }
