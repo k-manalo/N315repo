@@ -1,0 +1,42 @@
+.groceryContainer {
+    margin-left: 400px;
+    .boxes {
+        width: 100%;
+        display: flex;
+        .groceryListContainer {
+
+            margin-top: 15px;
+            background-color: lightgreen;
+            width: 350px;
+            height: 550px;
+            .itemList {
+                padding-top: 10px;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+                
+            }
+        }
+        .alertContainer {
+            h2 {
+                margin-top: 100px;
+                margin-left: 35px;
+            }
+
+            .alertBox {
+                padding: 25px;
+                margin-top: 15px;
+                margin-left: 35px;
+                border-width: 5px;
+                height:200px;
+                width: 200px;
+                background-color: lightskyblue;
+            }
+        }
+        
+    
+    }
+    
+}

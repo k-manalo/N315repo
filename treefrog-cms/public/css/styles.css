@@ -43,7 +43,7 @@ p {
 
 .btn-dark {
   background-color: #393c40;
-  color: #f2f2f2; }
+  color: white; }
 
 .btn-light {
   text-align: center;
@@ -60,6 +60,10 @@ p {
   height: 200px;
   width: 100%; }
 
+#quillContent {
+  height: 100%;
+  width: 100%; }
+
 .modal {
   position: fixed;
   top: 0;
@@ -72,7 +76,7 @@ p {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: rgba(242, 242, 242, 0.5); }
+    background-color: rgba(255, 255, 255, 0.5); }
     .modal .clickBox .closeX {
       position: absolute;
       top: 10px;
@@ -146,3 +150,31 @@ p {
   .content-wrapper .text-wrapper {
     width: 30%;
     margin-bottom: 40px; }
+
+.groceryContainer {
+  margin-left: 400px; }
+  .groceryContainer .boxes {
+    width: 100%;
+    display: flex; }
+    .groceryContainer .boxes .groceryListContainer {
+      margin-top: 15px;
+      background-color: lightgreen;
+      width: 350px;
+      height: 550px; }
+      .groceryContainer .boxes .groceryListContainer .itemList {
+        padding-top: 10px;
+        text-align: center; }
+        .groceryContainer .boxes .groceryListContainer .itemList a {
+          text-decoration: none;
+          color: black; }
+    .groceryContainer .boxes .alertContainer h2 {
+      margin-top: 100px;
+      margin-left: 35px; }
+    .groceryContainer .boxes .alertContainer .alertBox {
+      padding: 25px;
+      margin-top: 15px;
+      margin-left: 35px;
+      border-width: 5px;
+      height: 200px;
+      width: 200px;
+      background-color: lightskyblue; }

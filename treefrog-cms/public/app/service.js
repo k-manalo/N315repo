@@ -1,5 +1,90 @@
 var TREEFROG_SERVICE = (function() {
 
+  document.addEventListener("DOMContentLoaded", function() {   
+    // The Firebase SDK is initialized and available here!
+    /* 
+    firebase.auth().onAuthStateChanged(user => {}); // firebase 
+    .database()  
+    .ref('/contacts') 
+    .on('value', snapshot => {}); 
+    firebase.firestore().collection('contacts');
+    firebase.messaging().requestPermission().then(() => { }); 
+    firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { }); 
+    */
+    
+    //////////////////////////
+
+    try { 
+      let app = firebase.app(); 
+      let features = ["auth", "database", "messaging", "storage"].filter( 
+      feature => typeof app[feature] === "function" ); 
+      //document.getElementById('load'); 
+      } 
+      catch (e) { 
+        console.error(e); 
+      } 
+      });
+
+      var _db;
+
+      var _initFirebase = function() {
+        firebase 
+        .auth() 
+        .signInAnonymously() 
+        .then(function(result) { 
+          console.log("Connected")
+          _db = firebase.firestore();
+          _addContact(); 
+        });
+      }
+      
+      var _addContact = function() {
+        let data = {fName: "Farquad", lName: "Shelton"};
+        _db
+        .collection('Pages') 
+        .add(data) 
+        .then(function(docRef) { 
+          console.log('Document written with ID: ', docRef.id);
+           
+        }) 
+        .catch(function(error) { 
+          console.error('Error adding document: ', error); 
+        });
+      }
+
+      var _saveData = function(pageData) {
+        _db
+        .collection('Pages') 
+        .get() 
+        .then(function(querySnapshot) { 
+          querySnapshot.forEach(function(doc) { 
+            // clone template row and append to table body
+            // var tr = tempTr.clone();
+            // tr.data('id', doc.id); 
+            console.log('id', doc.id); 
+            var id = doc.id; 
+            var data = doc.data(); 
+            // set cell values from Contact data 
+            console.log('data', data); 
+           
+          }); 
+        });
+      };
+
+      var _checkMainNavName = function(mainNavName, callback) {
+       console.log("here ", mainNavName)
+        _db.collection("Pages")
+        .where('navName', '==', mainNavName)
+        get()
+        .then(function(querySnapshot) {
+          console.log("got something ", querySnapshot.empty);
+          if(querySnapshot.empty) {
+
+          }
+
+        })
+      }
+
     var _getGetStartedContent = function() {
         let contentStr = `<h1>Treefrog CMS</h1><p>This is the screen where you will create your navigation and page content.</p><p>First, you will need to create a main navigation. Once you have created a main navigation you can create a sub-navigation if you would like to.</p><p>Once you create either a nav or sub-nav a text editor will pop up and you will be allowed to create your page content.</p>`;
 
@@ -88,21 +173,19 @@ var TREEFROG_SERVICE = (function() {
         return startBtn;
     }
 
-    var _getEditNavContent = function() {
+    var _getEditNavContent = function(caseCheck) {
       let navContent = `<h2>Treefrog CMS</h2>
       <p>Now you have your navigation set now you can create your own content. Below you will see your navigation name and a text editor. Create your content in the text editor and then click on "Save Page Info". Once you have done that click on "REVIEW SITE" to see what your web page looks like.</p>
-      
+      <h4>nav > ${caseCheck}</h4>
+     
       <div class="btn-holder">
-      <span class="btn btn-dark save-btn">Save Page Info</span>
+      <span class="btn btn-dark saveData" >Save Page Info</span>
       </div>`
+      
       return navContent;
     }
 
-    var _getQuillEditor = function() {
-      let quillEditorContent = `<div id="editor-container" style="background-color: red; height: 200px; width: 100%"></div>`;
-      
-      return quillEditorContent;
-    }
+    
     
  
     return {
@@ -113,6 +196,9 @@ var TREEFROG_SERVICE = (function() {
         getCreateNavContent: _getCreateNavContent,
         getCreateSubContent: _getCreateSubContent,
         getEditNavContent: _getEditNavContent,
-        getQuillEditor: _getQuillEditor
+        initFirebase: _initFirebase,
+        checkMainNavName: _checkMainNavName,
+        saveData: _saveData
+        
     };
 })();

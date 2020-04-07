@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class="groceryContainer">
+       <h1>Grocery List</h1>
+       <div class="addContainer">
+           <input type="text" id="addItem">
+           <button id="addItemBtn">Add Item</button>
+       </div>
+       <!--
+       <div class="updateContainer">
+           <input type="text" id="updateItem">
+           <button id="updateItemBtn">Update Item</button>
+       </div>
+        -->
+        <div class="boxes">
+            <div class="groceryListContainer"></div>
+            <div class="alertContainer">
+                <h2>Updates:</h2>
+                <div class="alertBox">Add item in text field.</div>
+            </div>
+            
+        </div>
+       
+       <!--<button id="deleteItem">Delete Item</button> -->
+    </div>
+    
+</body>
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/7.8.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.8.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.8.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.8.0/firebase-firestore.js"></script>
+<script defer src="/__/firebase/7.8.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.8.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+<script src="lib/jquery.min.js"></script>
+<script src="app/gService.js"></script>
+<script src="app/gApp.js"></script>
+ <!-- Quill -->    
+ <script src="https://cdn.quilljs.com/1.1.6/quill.js"></script>
+</html>

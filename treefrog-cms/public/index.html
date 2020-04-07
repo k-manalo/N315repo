@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Treefrog | CMS</title>
+    <link href="https://cdn.quilljs.com/1.1.6/quill.snow.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -60,7 +61,7 @@
       </div>
       
     <div id="editor-container"></div>
-
+    <div id="quillContent"></div>
     </div>
 
     <div class="modal">
@@ -84,12 +85,15 @@
     <script defer src="/__/firebase/7.8.1/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
-    <!-- Quill -->
-    <link href="https://cdn.quilljs.com/1.1.6/quill.snow.css" rel="stylesheet">
-    <script src="https://cdn.quilljs.com/1.1.6/quill.js"></script>
+   
+    
     <script src="lib/jquery.min.js"></script>
+    
     <script src="app/service.js"></script>
     <script src="app/app.js"></script>
+
+     <!-- Quill -->    
+     <script src="https://cdn.quilljs.com/1.1.6/quill.js"></script>
     
   <script>
     /*

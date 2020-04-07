@@ -1,4 +1,18 @@
 
+function addMainNav(navName) {
+    console.log('add', navName);
+
+    let pageFakeData = {
+        "navName": navName,
+        "content": "<h1>HELLO</h1>",
+        "subnavs": [
+            {
+                "navName": "home",
+                "content": "<h1>HELLO</h1>"
+            }
+        ]
+    }
+}
 
 function initButtons() {
    
@@ -15,6 +29,8 @@ function initButtons() {
     })
 };
 
+
+
 function addGetStartedListener() {
 
     $(".get-started").click(function(e) {      
@@ -29,6 +45,13 @@ function addGetStartedListener() {
 
 
         $(".main-nav").click(function(e) {
+
+            console.log('nav name', newNavName)
+
+            let newNavName
+            TREEFROG_SERVICE.checkMainNavName(newNavName, addMainNav);
+
+            
               $('.alert-box').html(TREEFROG_SERVICE.getCreateNavContent());
               $(".modal").css("display", "flex");            
               $(".cancel-btn").click(function(e) {
@@ -52,21 +75,50 @@ function addGetStartedListener() {
                     alert("Nav already exists! Please enter a new name.")                   
                   }else {
                         //if name does not exist
-
                         //pushes new nav name to array
-                    navNamesArr.push(caseCheck);
-                    console.log(caseCheck + " created!");
-                    $('.text-wrapper').html(TREEFROG_SERVICE.getEditNavContent());
-                    $('#editor-container').html(TREEFROG_SERVICE.getQuillEditor());
-                    //call quillEditor function
-                    quillEditor(); 
+                        navNamesArr.push(caseCheck);
+                    
+                    var toolbarOptions = [
+                        ['bold', 'italic', 'underline', 'strike'], // toggled buttons 
+                        ['blockquote', 'code-block', 'image', 'link'], 
+                        [{ header: 1 }, { header: 2 }], // custom button values 
+                        [{ list: 'ordered' }, { list: 'bullet' }], 
+                        [{ script: 'sub' }, { script: 'super' }], // superscript/subscript 
+                        [{ indent: '-1' }, { indent: '+1' }], // outdent/indent 
+                        [{ direction: 'rtl' }], // text direction 
+                        [{ size: ['small', false, 'large', 'huge'] }], // custom dropdown 
+                        [{ header: [1, 2, 3, 4, 5, 6, false] }], 
+                        [{ color: [] }, { background: [] }], // dropdown with defaults from theme 
+                        [{ font: [] }], [{ align: [] }], ['clean'] // remove formatting button 
+                       ]; 
+                       var quill = new Quill('#editor-container', { 
+                               modules: { 
+                                   toolbar: toolbarOptions 
+                               }, theme: 'snow' 
+                           });                        
+                         
+                    console.log(caseCheck + " createdddd!");
+                    $('.text-wrapper').html(TREEFROG_SERVICE.getEditNavContent(caseCheck));
+                   
                     $('#addNav div').removeClass('active');
                     $('#editNav div').addClass(' active');
                     $(".modal").css("display", "none");
                     $("#createMainNav").css("display", "none");
                     $("#createSubNav").css("display", "none");
                   }
-                  
+
+                  $('.saveData').click(function(e) {
+                    console.log("saved") 
+                    
+                    e.preventDefault();  
+                   
+                    var justHtml = quill.root.innerHTML; 
+                    $('#quillContent').html(justHtml);
+                    setPages(justHtml);
+                    $(".content-wrapper").css("display", "block"); 
+                    $(".pageData").html(justHtml);
+                    
+                 });
               })
           })
 
@@ -83,32 +135,7 @@ function addGetStartedListener() {
     
 }
 
-function quillEditor() {
-    console.log("Quill Open")
-    var quill = new Quill($('#editor-container').html(TREEFROG_SERVICE.getQuillEditor()), {
-   modules: {
-       toolbar: [
-       ["bold", "italic", "underline", "strike"],
-       ["blockquote", "code-block"],
-       [{header: 1}, {header: 2}],
-       [{list: "ordered"}, {list: "bullet"}],
-       [{script: "sub"}, {script: "super"}],
-       [{indent: "-1"}, {indent:"+1"}],
-       [{direction: "rt1"}],
-       [{size: ["small", false, "large", "huge"]}],
-       [{header: [1, 2, 3, 4, 5, 6, false]}],
-       [{color: []}, {background: []}],
-       [{font: []}],
-       [{align: []}],
-       ["clean"]
-       ]
-   },
-   placeholder: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aut maxime ipsum ipsa fuga nostrum natus pariatur neque officiis delectus explicabo minima temporibus repellat iusto laudantium atque maiores, quibusdam expedita!",
-   theme: "snow"
-   })
 
-   return quill;
-}
 
 function addCreateMainNavListener() {
     $("#createMainNav").click(function(e) {
@@ -128,10 +155,48 @@ function closeModal() {
     
 }
 
+function setPages() {
+
+    //margin
+    $('.ql-indent-0').css('margin-left', '0px');
+    $('.ql-indent-1').css('margin-left', '35px');
+    $('.ql-indent-2').css('margin-left', '70px');
+    $('.ql-indent-3').css('margin-left', '105px');
+    $('.ql-indent-4').css('margin-left', '140px');
+    $('.ql-indent-5').css('margin-left', '175px');
+    $('.ql-indent-6').css('margin-left', '210px');
+    $('.ql-indent-7').css('margin-left', '245px');
+    $('.ql-indent-8').css('margin-left', '280px');
+    //text-align
+    $('.ql-align-left').css('text-align', 'left');
+    $('.ql-align-right').css('text-align', 'right');
+    //text- size
+    $('.ql-size-small').css('font-size', '10px');
+    $('.ql-size-large').css('font-size', '30px');
+    $('.ql-size-huge').css('font-size', '45px');
+    //font-family
+    $('.ql-font-serif').css('font-family', 'serif');
+    $('.ql-font-monospace').css('font-family', 'monospace');
+    //align-content
+    $('.ql-align-left').css('align-items', 'left');
+    $('.ql-align-center').css('align-items', 'center');
+    $('.ql-align-right').css('align-items', 'right');
+    $('.ql-align-justify').css('justify-content', 'center');
+
+
+}
+
+
+
 $(document).ready(function() {
+   
+   TREEFROG_SERVICE.initFirebase(); 
    initButtons();
    addGetStartedListener();
    closeModal();
+   setPages();
+   
+ 
    
    
 });

@@ -35,7 +35,7 @@
 
 .btn-dark {
   background-color: #393c40;
-  color: $white-color;
+  color: white;
 }
 
 .btn-light {
@@ -58,6 +58,11 @@
   width: 100%;
 }
 
+#quillContent {
+  height: 100%;
+  width: 100%;
+}
+
 .modal {
   
   position: fixed;
@@ -75,7 +80,7 @@
     height: 100%;
     width: 100%;
     
-    background-color: rgba($white-color, 0.5);
+    background-color: rgba(white, 0.5);
 
     .closeX {
       position: absolute;
@@ -83,7 +88,7 @@
       right: 10px;
       font-size: 50px;
       cursor: pointer;
-      color: $dark-color;
+      color: #393c40;
       
     }
    }
@@ -93,7 +98,7 @@
    margin-top: 150px;
     width: 600px;
     height: 350px;
-    background-color: $dark-color;
+    background-color: #393c40;
   padding: 20px;
    display: flex;
    flex-direction: column;
