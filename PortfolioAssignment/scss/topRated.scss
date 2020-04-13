@@ -22,15 +22,15 @@
       margin-bottom: -20px;
       color: white;
       font-style: italic;
+      text-shadow: 2px 2px 5px black;
     }
 
     .line {
-      margin-top: 25px;
-      height: 3px;
+      height: 30px;
       width: 330px;
-
+      border-radius: 40px;
       text-align: center;
-      background-color: rgb(214, 162, 50);
+      border-bottom: 3px solid rgb(214, 162, 50);
     }
   }
 
@@ -39,14 +39,12 @@
     .ship1 {
       .shipTitle {
         color: white;
+        h3 {
+          text-shadow: 2px 2px 5px black;
+        }
       }
       .shipimg1 {
-        background-image: linear-gradient(
-            to left,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0)
-          ),
-          url(../images/ship1.jpg);
+        background-image: url(../images/ship1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -54,31 +52,33 @@
         height: 300px;
         width: 375px;
         left: 0px;
-      }
-      .shipDetails {
-        border-radius: 5px;
-        width: 175px;
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.65);
-        h4 {
-          padding: 5px;
-          color: white;
+
+        .shipDetails {
+          display: none;
+
+          border-radius: 5px;
+          width: 175px;
+          height: 70px;
+          background-color: rgba(0, 0, 0, 0.65);
+          h4 {
+            padding: 5px;
+            color: white;
+          }
         }
       }
     }
     .ship2 {
       margin-left: 10px;
       margin-right: 10px;
+      justify-content: center;
       .shipTitle {
         color: white;
+        h3 {
+          text-shadow: 2px 2px 5px black;
+        }
       }
       .shipimg2 {
-        background-image: linear-gradient(
-            to left,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0)
-          ),
-          url(../images/ship2.jpg);
+        background-image: url(../images/ship2.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -86,29 +86,28 @@
         height: 300px;
         width: 375px;
         left: 0px;
-      }
-      .shipDetails {
-        border-radius: 5px;
-        width: 175px;
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.65);
-        h4 {
-          padding: 5px;
-          color: white;
+        .shipDetails {
+          display: none;
+          border-radius: 5px;
+          width: 175px;
+          height: 70px;
+          background-color: rgba(0, 0, 0, 0.65);
+          h4 {
+            padding: 5px;
+            color: white;
+          }
         }
       }
     }
     .ship3 {
       .shipTitle {
         color: white;
+        h3 {
+          text-shadow: 2px 2px 5px black;
+        }
       }
       .shipimg3 {
-        background-image: linear-gradient(
-            to left,
-            rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0)
-          ),
-          url(../images/ship3.jpg);
+        background-image: url(../images/ship3.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -116,17 +115,28 @@
         height: 300px;
         width: 375px;
         left: 0px;
-      }
-      .shipDetails {
-        border-radius: 5px;
-        width: 175px;
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.65);
-        h5 {
-          padding: 5px;
-          color: white;
+        .shipDetails {
+          display: none;
+          border-radius: 5px;
+          width: 175px;
+          height: 70px;
+          background-color: rgba(0, 0, 0, 0.65);
+          h5 {
+            padding: 5px;
+            color: white;
+          }
         }
       }
     }
   }
+}
+
+.voyages .ship1 .shipimg1:hover .shipDetails {
+  display: block;
+}
+.voyages .ship2 .shipimg2:hover .shipDetails {
+  display: block;
+}
+.voyages .ship3 .shipimg3:hover .shipDetails {
+  display: block;
 }

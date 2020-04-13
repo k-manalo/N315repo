@@ -17,19 +17,24 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
-    .siteTitle {
-      justify-content: center;
-      margin-left: 200px;
-      .line {
-        height: 40px;
-        width: 300px;
-        border-radius: 40px;
-        text-align: center;
-        border-bottom: 3px solid rgb(139, 156, 240);
+    a {
+      text-decoration: none;
+      .siteTitle {
+        justify-content: center;
+        margin-left: 200px;
+        .line {
+          height: 40px;
+          width: 300px;
+          border-radius: 40px;
+          text-align: center;
+          border-bottom: 3px solid rgb(139, 156, 240);
 
-        h1 {
-          font-size: 20px;
-          color: white;
+          h1 {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            text-shadow: 2px 2px 5px rgb(139, 156, 240);
+          }
         }
       }
     }

@@ -15,7 +15,11 @@
     font-style: italic;
     color: white;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    h1 {
+      text-shadow: 2px 2px 5px rgb(139, 156, 240);
+    }
     h2 {
+      text-shadow: 2px 2px 5px rgb(139, 156, 240);
       margin-top: -20px;
     }
     .enter-container {

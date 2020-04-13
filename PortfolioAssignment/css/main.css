@@ -45,20 +45,24 @@ p {
       width: 100px;
       background-repeat: no-repeat;
       background-size: cover; }
-    .topNav .nav-container .siteTitle {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      margin-left: 200px; }
-      .topNav .nav-container .siteTitle .line {
-        height: 40px;
-        width: 300px;
-        border-radius: 40px;
-        text-align: center;
-        border-bottom: 3px solid #8b9cf0; }
-        .topNav .nav-container .siteTitle .line h1 {
-          font-size: 20px;
-          color: white; }
+    .topNav .nav-container a {
+      text-decoration: none; }
+      .topNav .nav-container a .siteTitle {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-left: 200px; }
+        .topNav .nav-container a .siteTitle .line {
+          height: 40px;
+          width: 300px;
+          border-radius: 40px;
+          text-align: center;
+          border-bottom: 3px solid #8b9cf0; }
+          .topNav .nav-container a .siteTitle .line h1 {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            text-shadow: 2px 2px 5px #8b9cf0; }
     .topNav .nav-container .cart-container {
       margin-left: -50px;
       margin-right: 50px; }
@@ -132,7 +136,10 @@ nav {
     font-style: italic;
     color: white;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+    .hero .callout h1 {
+      text-shadow: 2px 2px 5px #8b9cf0; }
     .hero .callout h2 {
+      text-shadow: 2px 2px 5px #8b9cf0;
       margin-top: -20px; }
     .hero .callout .enter-container {
       display: -webkit-box;
@@ -211,24 +218,24 @@ nav {
       font-size: 40px;
       margin-bottom: -20px;
       color: white;
-      font-style: italic; }
+      font-style: italic;
+      text-shadow: 2px 2px 5px black; }
     .topRated .topRatedTitle .line {
-      margin-top: 25px;
-      height: 3px;
+      height: 30px;
       width: 330px;
+      border-radius: 40px;
       text-align: center;
-      background-color: #d6a232; }
+      border-bottom: 3px solid #d6a232; }
   .topRated .voyages {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
     .topRated .voyages .ship1 .shipTitle {
       color: white; }
+      .topRated .voyages .ship1 .shipTitle h3 {
+        text-shadow: 2px 2px 5px black; }
     .topRated .voyages .ship1 .shipimg1 {
-      background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0))), url(../images/ship1.jpg);
-      background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship1.jpg);
-      background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship1.jpg);
-      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship1.jpg);
+      background-image: url(../images/ship1.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -236,24 +243,27 @@ nav {
       height: 300px;
       width: 375px;
       left: 0px; }
-    .topRated .voyages .ship1 .shipDetails {
-      border-radius: 5px;
-      width: 175px;
-      height: 70px;
-      background-color: rgba(0, 0, 0, 0.65); }
-      .topRated .voyages .ship1 .shipDetails h4 {
-        padding: 5px;
-        color: white; }
+      .topRated .voyages .ship1 .shipimg1 .shipDetails {
+        display: none;
+        border-radius: 5px;
+        width: 175px;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.65); }
+        .topRated .voyages .ship1 .shipimg1 .shipDetails h4 {
+          padding: 5px;
+          color: white; }
     .topRated .voyages .ship2 {
       margin-left: 10px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
       .topRated .voyages .ship2 .shipTitle {
         color: white; }
+        .topRated .voyages .ship2 .shipTitle h3 {
+          text-shadow: 2px 2px 5px black; }
       .topRated .voyages .ship2 .shipimg2 {
-        background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0))), url(../images/ship2.jpg);
-        background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship2.jpg);
-        background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship2.jpg);
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship2.jpg);
+        background-image: url(../images/ship2.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -261,21 +271,21 @@ nav {
         height: 300px;
         width: 375px;
         left: 0px; }
-      .topRated .voyages .ship2 .shipDetails {
-        border-radius: 5px;
-        width: 175px;
-        height: 70px;
-        background-color: rgba(0, 0, 0, 0.65); }
-        .topRated .voyages .ship2 .shipDetails h4 {
-          padding: 5px;
-          color: white; }
+        .topRated .voyages .ship2 .shipimg2 .shipDetails {
+          display: none;
+          border-radius: 5px;
+          width: 175px;
+          height: 70px;
+          background-color: rgba(0, 0, 0, 0.65); }
+          .topRated .voyages .ship2 .shipimg2 .shipDetails h4 {
+            padding: 5px;
+            color: white; }
     .topRated .voyages .ship3 .shipTitle {
       color: white; }
+      .topRated .voyages .ship3 .shipTitle h3 {
+        text-shadow: 2px 2px 5px black; }
     .topRated .voyages .ship3 .shipimg3 {
-      background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0))), url(../images/ship3.jpg);
-      background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship3.jpg);
-      background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship3.jpg);
-      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0)), url(../images/ship3.jpg);
+      background-image: url(../images/ship3.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -283,14 +293,24 @@ nav {
       height: 300px;
       width: 375px;
       left: 0px; }
-    .topRated .voyages .ship3 .shipDetails {
-      border-radius: 5px;
-      width: 175px;
-      height: 70px;
-      background-color: rgba(0, 0, 0, 0.65); }
-      .topRated .voyages .ship3 .shipDetails h5 {
-        padding: 5px;
-        color: white; }
+      .topRated .voyages .ship3 .shipimg3 .shipDetails {
+        display: none;
+        border-radius: 5px;
+        width: 175px;
+        height: 70px;
+        background-color: rgba(0, 0, 0, 0.65); }
+        .topRated .voyages .ship3 .shipimg3 .shipDetails h5 {
+          padding: 5px;
+          color: white; }
+
+.voyages .ship1 .shipimg1:hover .shipDetails {
+  display: block; }
+
+.voyages .ship2 .shipimg2:hover .shipDetails {
+  display: block; }
+
+.voyages .ship3 .shipimg3:hover .shipDetails {
+  display: block; }
 
 .ratings {
   height: 50%;
@@ -379,15 +399,18 @@ nav {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .location .locationContainer .titleContainer h4 {
+    .location .locationContainer .titleContainer h2 {
+      margin-left: 15px;
       color: white;
       font-size: 25px;
-      font-style: italic; }
+      font-style: italic;
+      text-shadow: 2px 2px 5px #8b9cf0; }
     .location .locationContainer .titleContainer .titleLine {
       width: 400px;
-      height: 2px;
-      background-color: #d6a232;
-      margin-top: -10px; }
+      height: 35px;
+      border-bottom: 3px solid #d6a232;
+      margin-top: -30px;
+      border-radius: 40px; }
     .location .locationContainer .titleContainer .map {
       margin-top: 10px; }
   .location .inputContainer {
@@ -486,7 +509,8 @@ nav {
     .sponser .sponser-container .title-container h2 {
       color: #d6a232;
       font-style: italic;
-      text-align: center; }
+      text-align: center;
+      text-shadow: 1px 1px 2px black; }
     .sponser .sponser-container .title-container .line {
       margin-top: -30px;
       border-radius: 200px;
@@ -550,28 +574,39 @@ nav {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .products .productsTitle {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 50px;
     background-image: url(../images/mars.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 125px;
-    width: 75%; }
+    width: 75%;
+    border-radius: 5px; }
     .products .productsTitle h2 {
-      margin-left: 30px;
+      margin-left: 40px;
       font-size: 40px;
       margin-bottom: -20px;
       color: white;
-      font-style: italic; }
+      font-style: italic;
+      text-shadow: 2px 2px 5px #8b9cf0; }
     .products .productsTitle .line {
       margin-left: 30px;
-      margin-top: 25px;
-      height: 3px;
+      height: 35px;
       width: 330px;
+      border-radius: 40px;
       text-align: center;
-      background-color: #8b9cf0; }
+      border-bottom: 3px solid #8b9cf0; }
   .products .row1 {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -579,6 +614,13 @@ nav {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    .products .row1 .backArrow {
+      margin-right: -20px;
+      height: 125px;
+      width: 125px;
+      background-image: url(../images/arrow2.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
     .products .row1 .p1 {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -596,6 +638,8 @@ nav {
         width: 150px;
         border-radius: 5px; }
       .products .row1 .p1 .p1content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -624,6 +668,8 @@ nav {
         width: 150px;
         border-radius: 5px; }
       .products .row1 .p2 .p2content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -652,6 +698,8 @@ nav {
         width: 150px;
         border-radius: 5px; }
       .products .row1 .p3 .p3content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -680,6 +728,8 @@ nav {
         width: 150px;
         border-radius: 5px; }
       .products .row1 .p4 .p4content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -708,6 +758,8 @@ nav {
         width: 150px;
         border-radius: 5px; }
       .products .row1 .p5 .p5content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -719,6 +771,13 @@ nav {
         .products .row1 .p5 .p5content h4 {
           font-style: italic;
           color: white; }
+    .products .row1 .nextArrow {
+      margin-left: -20px;
+      height: 125px;
+      width: 125px;
+      background-image: url(../images/arrow3.png);
+      background-repeat: no-repeat;
+      background-size: cover; }
   .products .more {
     border: 2px solid white;
     background-color: #8b9cf0;
@@ -744,14 +803,17 @@ nav {
   justify-content: space-between;
   padding: 50px; }
   .mission .missionTitle h4 {
+    margin-left: 20px;
     color: white;
     font-size: 25px;
-    font-style: italic; }
+    font-style: italic;
+    text-shadow: 2px 2px 5px #8b9cf0; }
   .mission .missionTitle .missionLine {
     width: 275px;
-    height: 2px;
-    background-color: #d6a232;
-    margin-top: -10px; }
+    height: 35px;
+    border-radius: 40px;
+    border-bottom: 3px solid #d6a232;
+    margin-top: -30px; }
   .mission .missionTitle .missionContent {
     display: -webkit-box;
     display: -ms-flexbox;

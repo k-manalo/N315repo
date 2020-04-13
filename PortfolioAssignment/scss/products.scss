@@ -12,34 +12,48 @@
   background-color: rgb(40, 46, 75);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+
   .productsTitle {
+    margin: 0 auto;
+    justify-content: center;
     margin-top: 50px;
     background-image: url(../images/mars.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 125px;
     width: 75%;
+    border-radius: 5px;
     h2 {
-      margin-left: 30px;
+      margin-left: 40px;
       font-size: 40px;
       margin-bottom: -20px;
       color: white;
       font-style: italic;
+      text-shadow: 2px 2px 5px rgb(139, 156, 240);
     }
     .line {
       margin-left: 30px;
-      margin-top: 25px;
-      height: 3px;
+      height: 35px;
       width: 330px;
-
+      border-radius: 40px;
       text-align: center;
-      background-color: rgb(139, 156, 240);
+      border-bottom: 3px solid rgb(139, 156, 240);
     }
   }
   .row1 {
+    width: 100%;
     display: flex;
     margin-top: 100px;
     justify-content: space-between;
+    .backArrow {
+      margin-right: -20px;
+      height: 125px;
+      width: 125px;
+      background-image: url(../images/arrow2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     .p1 {
       display: flex;
       flex-direction: column;
@@ -53,6 +67,8 @@
         border-radius: 5px;
       }
       .p1content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -82,6 +98,8 @@
         border-radius: 5px;
       }
       .p2content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -111,6 +129,8 @@
         border-radius: 5px;
       }
       .p3content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -140,6 +160,8 @@
         border-radius: 5px;
       }
       .p4content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -169,6 +191,8 @@
         border-radius: 5px;
       }
       .p5content {
+        border-radius: 5px;
+        margin-top: 15px;
         background-color: rgba(0, 0, 0, 0.5);
         height: 65px;
         width: 150px;
@@ -184,6 +208,14 @@
           color: white;
         }
       }
+    }
+    .nextArrow {
+      margin-left: -20px;
+      height: 125px;
+      width: 125px;
+      background-image: url(../images/arrow3.png);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   .more {
