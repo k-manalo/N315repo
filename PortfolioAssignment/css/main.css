@@ -420,12 +420,16 @@ nav {
       font-size: 25px;
       font-style: italic; }
     .location .inputContainer #country {
+      color: black;
       width: 75%; }
     .location .inputContainer #state {
+      color: black;
       width: 75%; }
     .location .inputContainer #zipcode {
+      color: black;
       width: 75%; }
     .location .inputContainer #cabin {
+      color: black;
       width: 75%; }
     .location .inputContainer .titleLine {
       width: 400px;
