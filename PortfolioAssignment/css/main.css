@@ -18,6 +18,9 @@ h6,
 p {
   margin-bottom: 12px; }
 
+a {
+  text-decoration: none; }
+
 .topNav {
   width: 100%;
   height: 100px;
@@ -54,12 +57,12 @@ p {
         margin-left: 200px; }
         .topNav .nav-container a .siteTitle .line {
           height: 40px;
-          width: 300px;
+          width: 350px;
           border-radius: 40px;
           text-align: center;
           border-bottom: 3px solid #8b9cf0; }
           .topNav .nav-container a .siteTitle .line h1 {
-            font-size: 20px;
+            font-size: 30px;
             color: white;
             text-decoration: none;
             text-shadow: 2px 2px 5px #8b9cf0; }
@@ -472,6 +475,11 @@ nav {
         .location .inputContainer a .submit h5 {
           margin-top: 13px; }
 
+.locationDivider {
+  background-color: white;
+  height: 2px;
+  width: 100%; }
+
 @media (max-width: 1200px) {
   .location .inputContainer input {
     width: 75%;
@@ -796,6 +804,10 @@ nav {
     .products .more h5 {
       margin-top: 13px; }
 
+.missionDivider {
+  height: 2px;
+  width: 100%; }
+
 .mission {
   height: 100%;
   width: 100%;
@@ -855,7 +867,8 @@ nav {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-left: 200px;
-  padding-right: 200px; }
+  padding-right: 200px;
+  background-color: lightgrey; }
   .faq .faq-container {
     text-align: center; }
     .faq .faq-container .title h3 {
@@ -883,10 +896,386 @@ nav {
     .faq .help-container .helpContent h5 {
       color: grey; }
 
+.destinations {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35))), url(../images/mars.jpg);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/mars.jpg);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/mars.jpg);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/mars.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .destinations .title-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 50px; }
+    .destinations .title-container a {
+      text-decoration: none; }
+    .destinations .title-container .title-line {
+      text-align: center;
+      width: 85%;
+      height: 35px;
+      border-radius: 40px;
+      border-bottom: 3px solid #8b9cf0;
+      margin-top: 15px; }
+      .destinations .title-container .title-line h2 {
+        margin-top: -5px;
+        color: white;
+        text-shadow: 2px 2px 5px #8b9cf0;
+        font-style: italic; }
+  .destinations .row1 {
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .destinations .row1 .d1 {
+      cursor: pointer; }
+      .destinations .row1 .d1 a {
+        text-decoration: none; }
+      .destinations .row1 .d1 .d1img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/moon.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row1 .d1 .d1img .d1-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row1 .d1 .d1img .d1-content h2 {
+            color: white; }
+    .destinations .row1 .d2 {
+      cursor: pointer; }
+      .destinations .row1 .d2 a {
+        text-decoration: none; }
+      .destinations .row1 .d2 .d2img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/mars2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row1 .d2 .d2img .d2-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row1 .d2 .d2img .d2-content h2 {
+            color: white; }
+    .destinations .row1 .d3 {
+      cursor: pointer; }
+      .destinations .row1 .d3 a {
+        text-decoration: none; }
+      .destinations .row1 .d3 .d3img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/venus.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row1 .d3 .d3img .d3-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row1 .d3 .d3img .d3-content h2 {
+            color: white; }
+    .destinations .row1 .d4 {
+      cursor: pointer; }
+      .destinations .row1 .d4 a {
+        text-decoration: none; }
+      .destinations .row1 .d4 .d4img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/titan2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row1 .d4 .d4img .d4-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row1 .d4 .d4img .d4-content h2 {
+            color: white; }
+    .destinations .row1 .d5 {
+      cursor: pointer; }
+      .destinations .row1 .d5 a {
+        text-decoration: none; }
+      .destinations .row1 .d5 .d5img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/jupiter.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row1 .d5 .d5img .d5-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row1 .d5 .d5img .d5-content h2 {
+            color: white; }
+  .destinations .row2 {
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .destinations .row2 .d1 {
+      cursor: pointer; }
+      .destinations .row2 .d1 a {
+        text-decoration: none; }
+      .destinations .row2 .d1 .d1img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/pluto.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row2 .d1 .d1img .d1-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row2 .d1 .d1img .d1-content h2 {
+            color: white; }
+    .destinations .row2 .d2 {
+      cursor: pointer; }
+      .destinations .row2 .d2 a {
+        text-decoration: none; }
+      .destinations .row2 .d2 .d2img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/asteroid.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row2 .d2 .d2img .d2-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row2 .d2 .d2img .d2-content h2 {
+            color: white; }
+    .destinations .row2 .d3 {
+      cursor: pointer; }
+      .destinations .row2 .d3 a {
+        text-decoration: none; }
+      .destinations .row2 .d3 .d3img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/iss.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row2 .d3 .d3img .d3-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row2 .d3 .d3img .d3-content h2 {
+            color: white; }
+    .destinations .row2 .d4 {
+      cursor: pointer; }
+      .destinations .row2 .d4 a {
+        text-decoration: none; }
+      .destinations .row2 .d4 .d4img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/orbit.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row2 .d4 .d4img .d4-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row2 .d4 .d4img .d4-content h2 {
+            color: white; }
+    .destinations .row2 .d5 {
+      cursor: pointer; }
+      .destinations .row2 .d5 a {
+        text-decoration: none; }
+      .destinations .row2 .d5 .d5img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/galaxy.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px; }
+        .destinations .row2 .d5 .d5img .d5-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px; }
+          .destinations .row2 .d5 .d5img .d5-content h2 {
+            color: white; }
+
+.row1 .d1 .d1img:hover .d1-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row1 .d2 .d2img:hover .d2-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row1 .d3 .d3img:hover .d3-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row1 .d4 .d4img:hover .d4-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row1 .d5 .d5img:hover .d5-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row2 .d1 .d1img:hover .d1-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row2 .d2 .d2img:hover .d2-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row2 .d3 .d3img:hover .d3-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row2 .d4 .d4img:hover .d4-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.row2 .d5 .d5img:hover .d5-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px; }
+
+.login {
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .login .login-content {
+    margin-top: 15px;
+    margin-left: 200px; }
+    .login .login-content h3 {
+      color: #d6a232;
+      font-style: italic;
+      text-shadow: 1px 1px 2px black; }
+  .login .loginDivider {
+    margin-top: 20px;
+    width: 2px;
+    height: 80%;
+    background-color: lightgrey;
+    margin-left: 50px;
+    margin-right: 50px; }
+  .login .title-container {
+    margin-right: 200px;
+    margin-top: 35px;
+    background-color: lightgrey;
+    height: 70%;
+    width: 25%; }
+    .login .title-container .title-line {
+      margin-left: 30px;
+      height: 35px;
+      width: 230px;
+      border-radius: 40px;
+      border-bottom: 3px solid #8b9cf0; }
+      .login .title-container .title-line h2 {
+        margin-left: 15px;
+        font-style: italic;
+        color: white;
+        text-shadow: 2px 2px 5px #8b9cf0; }
+    .login .title-container .input-container {
+      margin-left: 30px; }
+      .login .title-container .input-container .username #user {
+        border-radius: 20px; }
+      .login .title-container .input-container .password #pass {
+        border-radius: 20px; }
+      .login .title-container .input-container a {
+        text-decoration: none; }
+        .login .title-container .input-container a .enterlogin {
+          margin-top: 15px;
+          border: 2px solid white;
+          width: 100px;
+          height: 30px;
+          border-radius: 20px;
+          background-color: #8b9cf0; }
+          .login .title-container .input-container a .enterlogin h4 {
+            padding-top: 5px;
+            text-align: center;
+            margin: auto;
+            color: white; }
+
 .footer {
   width: 100%;
   height: 100px;
-  background-color: grey;
+  background-color: black;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -908,7 +1297,7 @@ nav {
     -ms-flex-align: center;
     align-items: center;
     margin-top: 30px;
-    color: #282e4b;
+    color: white;
     font-size: 20px; }
   .footer .social {
     display: -webkit-box;

@@ -1,0 +1,85 @@
+.login {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .login-content {
+    margin-top: 15px;
+    margin-left: 200px;
+    h3 {
+      color: rgb(214, 162, 50);
+      font-style: italic;
+
+      text-shadow: 1px 1px 2px black;
+    }
+    p {
+    }
+  }
+  .loginDivider {
+    margin-top: 20px;
+    width: 2px;
+    height: 80%;
+    background-color: lightgrey;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .title-container {
+    margin-right: 200px;
+    margin-top: 35px;
+    background-color: lightgrey;
+    height: 70%;
+    width: 25%;
+    .title-line {
+      margin-left: 30px;
+      height: 35px;
+      width: 230px;
+      border-radius: 40px;
+
+      border-bottom: 3px solid rgb(139, 156, 240);
+      h2 {
+        margin-left: 15px;
+        font-style: italic;
+        color: white;
+        text-shadow: 2px 2px 5px rgb(139, 156, 240);
+      }
+    }
+    .input-container {
+      margin-left: 30px;
+      .username {
+        h3 {
+        }
+        #user {
+          border-radius: 20px;
+        }
+      }
+      .password {
+        h3 {
+        }
+        #pass {
+          border-radius: 20px;
+        }
+      }
+      a {
+        text-decoration: none;
+        .enterlogin {
+          margin-top: 15px;
+
+          border: 2px solid white;
+
+          width: 100px;
+          height: 30px;
+          border-radius: 20px;
+          background-color: rgb(139, 156, 240);
+          h4 {
+            padding-top: 5px;
+            text-align: center;
+            margin: auto;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,356 @@
+.destinations {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+      left,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url(../images/mars.jpg);
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+
+  .title-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    a {
+      text-decoration: none;
+    }
+    .title-line {
+      text-align: center;
+
+      h2 {
+        margin-top: -5px;
+        color: white;
+        text-shadow: 2px 2px 5px rgb(139, 156, 240);
+        font-style: italic;
+      }
+      width: 85%;
+      height: 35px;
+      border-radius: 40px;
+      border-bottom: 3px solid rgb(139, 156, 240);
+      margin-top: 15px;
+    }
+  }
+  .row1 {
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .d1 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d1img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/moon.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d1-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d2 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d2img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/mars2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d2-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d3 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d3img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/venus.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d3-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d4 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d4img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/titan2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d4-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d5 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d5img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/jupiter.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d5-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .row2 {
+    margin-top: 45px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .d1 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d1img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/pluto.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d1-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d2 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d2img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/asteroid.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d2-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d3 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d3img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/iss.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d3-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d4 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d4img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/orbit.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d4-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+    .d5 {
+      cursor: pointer;
+      a {
+        text-decoration: none;
+      }
+      .d5img {
+        height: 150px;
+        width: 150px;
+        background-image: url(../images/galaxy.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        .d5-content {
+          display: none;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 150px;
+          h2 {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.row1 .d1 .d1img:hover .d1-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row1 .d2 .d2img:hover .d2-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row1 .d3 .d3img:hover .d3-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row1 .d4 .d4img:hover .d4-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row1 .d5 .d5img:hover .d5-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.row2 .d1 .d1img:hover .d1-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row2 .d2 .d2img:hover .d2-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row2 .d3 .d3img:hover .d3-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row2 .d4 .d4img:hover .d4-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.row2 .d5 .d5img:hover .d5-content {
+  display: block;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 10px;
+}

@@ -108,7 +108,11 @@
     }
   }
 }
-
+.locationDivider {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+}
 @media (max-width: 1200px) {
   .location {
     .inputContainer {
