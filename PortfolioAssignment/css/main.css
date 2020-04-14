@@ -185,8 +185,6 @@ nav {
     margin: auto; }
     .quote .quote-container h3 {
       font-style: italic; }
-    .quote .quote-container h4 {
-      font-family: "Times New Roman", Times, serif; }
   .quote .quoteimg {
     background-image: url(../images/quoteimg.jpg);
     margin-top: 50px;
@@ -235,7 +233,8 @@ nav {
       .topRated .voyages .ship1 .shipTitle h3 {
         text-shadow: 2px 2px 5px black; }
     .topRated .voyages .ship1 .shipimg1 {
-      background-image: url(../images/ship1.jpg);
+      cursor: pointer;
+      background-image: url(../images/moon2.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -263,7 +262,8 @@ nav {
         .topRated .voyages .ship2 .shipTitle h3 {
           text-shadow: 2px 2px 5px black; }
       .topRated .voyages .ship2 .shipimg2 {
-        background-image: url(../images/ship2.jpg);
+        cursor: pointer;
+        background-image: url(../images/marsastro.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -285,7 +285,8 @@ nav {
       .topRated .voyages .ship3 .shipTitle h3 {
         text-shadow: 2px 2px 5px black; }
     .topRated .voyages .ship3 .shipimg3 {
-      background-image: url(../images/ship3.jpg);
+      cursor: pointer;
+      background-image: url(../images/andro.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -865,8 +866,10 @@ nav {
       width: 300px;
       border-bottom: 3px solid grey;
       border-radius: 400px; }
-    .faq .faq-container .faqContent h5 {
-      color: grey; }
+    .faq .faq-container .faqContent {
+      text-decoration: none; }
+      .faq .faq-container .faqContent h5 {
+        color: grey; }
   .faq .help-container {
     text-align: center; }
     .faq .help-container .title h3 {
