@@ -1,0 +1,223 @@
+.loginPage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #ffd972;
+    .loginPage-container {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-between;
+        padding-top: 175px;
+        padding-left: 50px;
+        padding-right: 50px;
+        .login-container {
+            margin-top: 65px;
+            display: flex;
+            flex-direction: column;
+            height: 500px;
+            //background-color: red;
+            .login-title {
+                text-align: center;
+                h1 {
+                    font-family: "Lato";
+                    font-size: 30px;
+                }
+            }
+            .lEmail {
+                margin-top: 50px;
+                height: 25px;
+                width: 206px;
+                border-bottom: 3px solid black;
+                #le {
+                    width: 206px;
+                    height: 15px;
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                    padding-top: -20px;;
+                    background-color: #ffd972;
+                    border: none;
+                    outline: none;
+                }
+                #le::placeholder {
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                }
+            }
+            .lPass {
+                margin-top: 40px;
+                height: 25px;
+                width: 206px;
+                border-bottom: 3px solid black;
+                #lp {
+                    width: 206px;
+                    height: 15px;
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                    padding-top: -20px;;
+                    background-color: #ffd972;
+                    border: none;
+                    outline: none;
+                }
+                #lp::placeholder {
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                }
+            }
+            #loginBtn {
+                margin-top: 50px;
+                background-color: #ffd972;
+                border-radius: 26px;
+                padding: 16px 50px;
+                text-align: center;
+                box-shadow: 0px 3px 10px 1px;
+                
+                cursor: pointer;
+                a {
+                    color: black;
+                    text-decoration: none;
+                    font-family: "Caveat", bold;
+                    font-size: 25px;
+                }
+            }
+        }
+        .signup-container {
+            //background-color: blue;
+            .signup-title {
+               p {
+                font-family: "Lato";
+                font-style: italic;
+                font-size: 12px;
+               }
+                h1 {
+                    font-family: "Lato";
+                    font-size: 30px;
+                }
+            }
+            .fName {
+                margin-top: 40px;
+                height: 25px;
+                width: 250px;
+                border-bottom: 3px solid black;
+                #fn {
+                    width: 250px;
+                    height: 15px;
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                    padding-top: -20px;;
+                    background-color: #ffd972;
+                    border: none;
+                    outline: none;
+                }
+                #fn::placeholder {
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                }
+            }
+            .lName {
+                margin-top: 40px;
+                height: 25px;
+                width: 250px;
+                border-bottom: 3px solid black;
+                #fl {
+                    width: 250px;
+                    height: 15px;
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                    padding-top: -20px;;
+                    background-color: #ffd972;
+                    border: none;
+                    outline: none;
+                }
+                #fl::placeholder {
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                }
+            }
+            .sEmail {
+                margin-top: 40px;
+                height: 25px;
+                width: 250px;
+                border-bottom: 3px solid black;
+                #se {
+                    width: 250px;
+                    height: 15px;
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                    padding-top: -20px;;
+                    background-color: #ffd972;
+                    border: none;
+                    outline: none;
+                }
+                #se::placeholder {
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                }
+            }
+            .sPass {
+                margin-top: 40px;
+                height: 25px;
+                width: 250px;
+                border-bottom: 3px solid black;
+                #sp {
+                    width: 250px;
+                    height: 15px;
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                    padding-top: -20px;;
+                    background-color: #ffd972;
+                    border: none;
+                    outline: none;
+                }
+                #sp::placeholder {
+                    font-family: "Lato";
+                    font-size: 12px;
+                    color: black;
+                }
+            }
+            .signupBtn {
+                margin-top: 50px;
+                background-color: #ffd972;
+                border-radius: 26px;
+                padding: 16px 50px;
+                text-align: center;
+                box-shadow: 0px 3px 10px 1px;
+                cursor: pointer;
+                h1 {
+                    padding-top: 7px;
+                    color: black;
+                    text-decoration: none;
+                    font-family: "Caveat", bold;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .loginPage {
+        width: 100%;
+        height: 100%;
+        background-color: #ffd972;
+        .loginPage-container {
+            display: flex;
+            flex-direction: column;
+            
+            
+            }
+    }
+    
+}

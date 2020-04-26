@@ -1,0 +1,1288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px; }
+
+.logo {
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  width: 168px;
+  height: 55px;
+  z-index: 100;
+  background-image: url(../images/logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.nav-holder {
+  position: absolute;
+  top: 38px;
+  right: 50px;
+  height: 52px;
+  width: 650px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav-holder #home {
+    text-decoration: underline; }
+  .nav-holder #login {
+    background-color: #ffd972;
+    border-radius: 26px;
+    padding: 16px 50px;
+    margin-left: 25px;
+    box-shadow: 0px 3px 10px 1px; }
+  .nav-holder a {
+    color: black;
+    text-decoration: none;
+    font-family: "Caveat", bold;
+    font-size: 25px; }
+
+.bars {
+  height: 50px;
+  width: 50px;
+  z-index: 100;
+  position: absolute;
+  top: 55px;
+  right: 50px;
+  display: none;
+  cursor: pointer; }
+
+@media all and (max-width: 768px) {
+  .nav-holder {
+    display: none;
+    background-color: #FCBCB8;
+    width: 500px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-around; }
+    .nav-holder #login {
+      border: 2px solid black; }
+  .bars {
+    display: flex; } }
+
+.home {
+  background-image: linear-gradient(to left, rgba(242, 92, 84, 0.65), rgba(242, 92, 84, 0.65)), url(../images/hero.jpg);
+  height: 800px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f25c54; }
+  .home .callout-container {
+    height: 450px;
+    width: 450px;
+    display: flex;
+    margin: 0 auto; }
+    .home .callout-container .pCircle {
+      position: absolute;
+      margin-top: 200px;
+      background-color: #FCBCB8;
+      height: 167px;
+      width: 167px;
+      border-radius: 300px;
+      margin-left: 280px;
+      text-align: center;
+      vertical-align: middle;
+      box-shadow: 0px 3px 10px 1px; }
+      .home .callout-container .pCircle p {
+        cursor: default;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-family: "Lato";
+        font-size: 10px;
+        padding-top: 70px; }
+    .home .callout-container .yCircle {
+      position: absolute;
+      margin-top: 250px;
+      background-color: #FFD972;
+      border-radius: 300px;
+      height: 357px;
+      width: 357px;
+      text-align: center;
+      vertical-align: middle;
+      box-shadow: 0px 3px 10px 1px; }
+      .home .callout-container .yCircle h1 {
+        cursor: default;
+        padding-top: 100px;
+        font-family: "Caveat";
+        font-size: 24px; }
+      .home .callout-container .yCircle p {
+        cursor: default;
+        padding-left: 120px;
+        padding-right: 120px;
+        font-family: "Lato";
+        font-size: 13px; }
+
+.browse {
+  display: none;
+  background-image: url(../images/recipe-hero.jpg);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(167, 232, 189, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .browse .browseTitle {
+    top: 150px;
+    left: 100;
+    padding-top: 200px; }
+    .browse .browseTitle .bTitle {
+      font-family: "Caveat";
+      font-size: 25px; }
+  .browse .browseRecipes {
+    padding-top: 100px;
+    background-color: rgba(167, 232, 189, 0.65);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px; }
+    .browse .browseRecipes .b-item-container {
+      justify-content: space-between;
+      width: 524px;
+      height: 263px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: row; }
+      .browse .browseRecipes .b-item-container #b-name {
+        font-family: "Caveat"; }
+      .browse .browseRecipes .b-item-container .b-item-img {
+        width: 300px;
+        height: 263px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 24px;
+        box-shadow: 0px 3px 10px 1px; }
+        .browse .browseRecipes .b-item-container .b-item-img .view {
+          display: flex;
+          width: 127px;
+          height: 42px;
+          margin-top: 110px;
+          margin-left: 80px;
+          background-color: #ffd972;
+          border-radius: 26px;
+          text-align: center;
+          cursor: pointer;
+          box-shadow: 0px 3px 10px 1px; }
+          .browse .browseRecipes .b-item-container .b-item-img .view a {
+            text-decoration: none;
+            color: black; }
+            .browse .browseRecipes .b-item-container .b-item-img .view a p {
+              padding-left: 50px;
+              padding-top: 10px;
+              font-family: "Caveat";
+              font-size: 20px; }
+      .browse .browseRecipes .b-item-container .b-item-info {
+        background-color: white;
+        border-radius: 24px;
+        width: 224px;
+        height: 263px;
+        box-shadow: 0px 3px 10px 1px; }
+        .browse .browseRecipes .b-item-container .b-item-info .b-item-line {
+          margin-top: 43px;
+          margin-left: 47px;
+          height: 20px;
+          width: 130px;
+          border-bottom: 3px solid black; }
+          .browse .browseRecipes .b-item-container .b-item-info .b-item-line h1 {
+            padding-bottom: -100px;
+            font-family: "Lato";
+            font-size: 15px; }
+        .browse .browseRecipes .b-item-container .b-item-info .b-item-desc {
+          margin-top: 18px;
+          margin-left: 47px;
+          width: 138px;
+          height: 70px; }
+          .browse .browseRecipes .b-item-container .b-item-info .b-item-desc p {
+            font-family: "Lato";
+            font-size: 9px; }
+        .browse .browseRecipes .b-item-container .b-item-info .b-time-container {
+          margin-left: 47px;
+          width: 138px;
+          height: 24px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .browse .browseRecipes .b-item-container .b-item-info .b-time-container .b-time-img {
+            background-image: url(../images/time.svg);
+            background-size: cover;
+            background-position: center;
+            height: 24px;
+            width: 24px; }
+          .browse .browseRecipes .b-item-container .b-item-info .b-time-container .b-time {
+            height: 13px; }
+            .browse .browseRecipes .b-item-container .b-item-info .b-time-container .b-time p {
+              padding-left: 10px;
+              padding-top: 5px;
+              font-family: "Lato";
+              font-size: 10px; }
+        .browse .browseRecipes .b-item-container .b-item-info .b-serving-container {
+          margin-top: 10px;
+          margin-left: 47px;
+          width: 138px;
+          height: 24px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .browse .browseRecipes .b-item-container .b-item-info .b-serving-container .b-serving-img {
+            background-image: url(../images/servings.svg);
+            background-size: cover;
+            background-position: center;
+            height: 24px;
+            width: 24px; }
+          .browse .browseRecipes .b-item-container .b-item-info .b-serving-container .b-serving {
+            height: 13px; }
+            .browse .browseRecipes .b-item-container .b-item-info .b-serving-container .b-serving p {
+              padding-left: 10px;
+              padding-top: 5px;
+              font-family: "Lato";
+              font-size: 10px; }
+    .browse .browseRecipes .update-container {
+      display: flex;
+      flex-direction: row; }
+      .browse .browseRecipes .update-container .edit {
+        margin-left: 10px;
+        width: 127px;
+        height: 42px;
+        margin-top: 50px;
+        background-color: #ffd972;
+        border-radius: 26px;
+        padding-top: 7px;
+        text-align: center;
+        box-shadow: 0px 3px 10px 1px; }
+        .browse .browseRecipes .update-container .edit a {
+          text-decoration: none;
+          color: black; }
+          .browse .browseRecipes .update-container .edit a p {
+            font-family: "Caveat";
+            font-size: 20px; }
+      .browse .browseRecipes .update-container .delete {
+        margin-left: 20px;
+        width: 127px;
+        height: 42px;
+        margin-top: 50px;
+        background-color: #ffd972;
+        border-radius: 26px;
+        padding-top: 7px;
+        text-align: center;
+        box-shadow: 0px 3px 10px 1px; }
+        .browse .browseRecipes .update-container .delete a {
+          text-decoration: none;
+          color: black; }
+          .browse .browseRecipes .update-container .delete a p {
+            font-family: "Caveat";
+            font-size: 20px; }
+
+.loginPage {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #ffd972; }
+  .loginPage .loginPage-container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    padding-top: 175px;
+    padding-left: 50px;
+    padding-right: 50px; }
+    .loginPage .loginPage-container .login-container {
+      margin-top: 65px;
+      display: flex;
+      flex-direction: column;
+      height: 500px; }
+      .loginPage .loginPage-container .login-container .login-title {
+        text-align: center; }
+        .loginPage .loginPage-container .login-container .login-title h1 {
+          font-family: "Lato";
+          font-size: 30px; }
+      .loginPage .loginPage-container .login-container .lEmail {
+        margin-top: 50px;
+        height: 25px;
+        width: 206px;
+        border-bottom: 3px solid black; }
+        .loginPage .loginPage-container .login-container .lEmail #le {
+          width: 206px;
+          height: 15px;
+          font-family: "Lato";
+          font-size: 12px;
+          color: black;
+          padding-top: -20px;
+          background-color: #ffd972;
+          border: none;
+          outline: none; }
+        .loginPage .loginPage-container .login-container .lEmail #le::placeholder {
+          font-family: "Lato";
+          font-size: 12px;
+          color: black; }
+      .loginPage .loginPage-container .login-container .lPass {
+        margin-top: 40px;
+        height: 25px;
+        width: 206px;
+        border-bottom: 3px solid black; }
+        .loginPage .loginPage-container .login-container .lPass #lp {
+          width: 206px;
+          height: 15px;
+          font-family: "Lato";
+          font-size: 12px;
+          color: black;
+          padding-top: -20px;
+          background-color: #ffd972;
+          border: none;
+          outline: none; }
+        .loginPage .loginPage-container .login-container .lPass #lp::placeholder {
+          font-family: "Lato";
+          font-size: 12px;
+          color: black; }
+      .loginPage .loginPage-container .login-container #loginBtn {
+        margin-top: 50px;
+        background-color: #ffd972;
+        border-radius: 26px;
+        padding: 16px 50px;
+        text-align: center;
+        box-shadow: 0px 3px 10px 1px;
+        cursor: pointer; }
+        .loginPage .loginPage-container .login-container #loginBtn a {
+          color: black;
+          text-decoration: none;
+          font-family: "Caveat", bold;
+          font-size: 25px; }
+    .loginPage .loginPage-container .signup-container .signup-title p {
+      font-family: "Lato";
+      font-style: italic;
+      font-size: 12px; }
+    .loginPage .loginPage-container .signup-container .signup-title h1 {
+      font-family: "Lato";
+      font-size: 30px; }
+    .loginPage .loginPage-container .signup-container .fName {
+      margin-top: 40px;
+      height: 25px;
+      width: 250px;
+      border-bottom: 3px solid black; }
+      .loginPage .loginPage-container .signup-container .fName #fn {
+        width: 250px;
+        height: 15px;
+        font-family: "Lato";
+        font-size: 12px;
+        color: black;
+        padding-top: -20px;
+        background-color: #ffd972;
+        border: none;
+        outline: none; }
+      .loginPage .loginPage-container .signup-container .fName #fn::placeholder {
+        font-family: "Lato";
+        font-size: 12px;
+        color: black; }
+    .loginPage .loginPage-container .signup-container .lName {
+      margin-top: 40px;
+      height: 25px;
+      width: 250px;
+      border-bottom: 3px solid black; }
+      .loginPage .loginPage-container .signup-container .lName #fl {
+        width: 250px;
+        height: 15px;
+        font-family: "Lato";
+        font-size: 12px;
+        color: black;
+        padding-top: -20px;
+        background-color: #ffd972;
+        border: none;
+        outline: none; }
+      .loginPage .loginPage-container .signup-container .lName #fl::placeholder {
+        font-family: "Lato";
+        font-size: 12px;
+        color: black; }
+    .loginPage .loginPage-container .signup-container .sEmail {
+      margin-top: 40px;
+      height: 25px;
+      width: 250px;
+      border-bottom: 3px solid black; }
+      .loginPage .loginPage-container .signup-container .sEmail #se {
+        width: 250px;
+        height: 15px;
+        font-family: "Lato";
+        font-size: 12px;
+        color: black;
+        padding-top: -20px;
+        background-color: #ffd972;
+        border: none;
+        outline: none; }
+      .loginPage .loginPage-container .signup-container .sEmail #se::placeholder {
+        font-family: "Lato";
+        font-size: 12px;
+        color: black; }
+    .loginPage .loginPage-container .signup-container .sPass {
+      margin-top: 40px;
+      height: 25px;
+      width: 250px;
+      border-bottom: 3px solid black; }
+      .loginPage .loginPage-container .signup-container .sPass #sp {
+        width: 250px;
+        height: 15px;
+        font-family: "Lato";
+        font-size: 12px;
+        color: black;
+        padding-top: -20px;
+        background-color: #ffd972;
+        border: none;
+        outline: none; }
+      .loginPage .loginPage-container .signup-container .sPass #sp::placeholder {
+        font-family: "Lato";
+        font-size: 12px;
+        color: black; }
+    .loginPage .loginPage-container .signup-container .signupBtn {
+      margin-top: 50px;
+      background-color: #ffd972;
+      border-radius: 26px;
+      padding: 16px 50px;
+      text-align: center;
+      box-shadow: 0px 3px 10px 1px;
+      cursor: pointer; }
+      .loginPage .loginPage-container .signup-container .signupBtn h1 {
+        padding-top: 7px;
+        color: black;
+        text-decoration: none;
+        font-family: "Caveat", bold;
+        font-size: 25px; }
+
+@media all and (max-width: 768px) {
+  .loginPage {
+    width: 100%;
+    height: 100%;
+    background-color: #ffd972; }
+    .loginPage .loginPage-container {
+      display: flex;
+      flex-direction: column; } }
+
+.create {
+  display: none;
+  height: 100%; }
+  .create .r-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 210px; }
+    .create .r-container .r-title h1 {
+      font-family: "Caveat";
+      font-size: 25px; }
+    .create .r-container .r-img {
+      display: flex;
+      flex-direction: row;
+      margin-top: 80px;
+      height: 40px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .r-container .r-img #addImg {
+        margin-top: 10px;
+        width: 95%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .r-container .r-img #addImg::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+      .create .r-container .r-img .attachFile {
+        padding-top: -40px;
+        width: 110px;
+        height: 30px;
+        background-color: #FCBCB8;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 3px 10px 1px; }
+        .create .r-container .r-img .attachFile p {
+          font-family: "Caveat";
+          text-align: center;
+          font-size: 17px;
+          padding-top: 3px; }
+    .create .r-container .r-name {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .r-container .r-name #addName {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .r-container .r-name #addName::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .r-container .r-desc {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .r-container .r-desc #addDesc {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .r-container .r-desc #addDesc::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .r-container .r-time {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .r-container .r-time #addTime {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .r-container .r-time #addTime::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .r-container .r-size {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .r-container .r-size #addSize {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .r-container .r-size #addSize::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+  .create .ing-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px; }
+    .create .ing-container .ing-title h1 {
+      font-family: "Lato";
+      font-style: bold;
+      font-size: 20px; }
+    .create .ing-container .ing-1 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .ing-container .ing-1 #addI1 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .ing-container .ing-1 #addI1::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .ing-container .ing-2 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .ing-container .ing-2 #addI2 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .ing-container .ing-2 #addI2::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .ing-container .ing-3 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .ing-container .ing-3 #addI3 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .ing-container .ing-3 #addI3::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+  .create .ins-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px; }
+    .create .ins-container .ins-title h1 {
+      font-family: "Lato";
+      font-style: bold;
+      font-size: 20px; }
+    .create .ins-container .ins-1 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .ins-container .ins-1 #addIns1 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .ins-container .ins-1 #addIns1::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .ins-container .ins-2 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .ins-container .ins-2 #addIns2 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .ins-container .ins-2 #addIns2::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .ins-container .ins-3 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .create .ins-container .ins-3 #addIns3 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .create .ins-container .ins-3 #addIns3::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .create .ins-container a {
+      text-decoration: none;
+      text-align: center; }
+      .create .ins-container a .createBtn {
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 40px;
+        display: flex;
+        background-color: #FCBCB8;
+        width: 422px;
+        height: 52px; }
+        .create .ins-container a .createBtn h1 {
+          margin: auto;
+          color: black;
+          font-family: "Caveat";
+          font-size: 25px; }
+
+.viewPage {
+  display: none;
+  height: 100%;
+  width: 100%; }
+  .viewPage .topSection {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 243px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px; }
+    .viewPage .topSection .vertName h1 {
+      writing-mode: vertical-lr;
+      font-family: "Lato";
+      font-size: 25px;
+      font-style: bold; }
+    .viewPage .topSection .viewImg {
+      background-image: url(../images/recipe-pizza.jpg);
+      width: 468px;
+      height: 421px;
+      background-position: center;
+      background-size: cover; }
+    .viewPage .topSection .viewDesc-container {
+      margin-left: 50px; }
+      .viewPage .topSection .viewDesc-container .viewDesc h1 {
+        font-family: "Lato";
+        font-size: 25px;
+        font-style: bold; }
+      .viewPage .topSection .viewDesc-container .viewDesc p {
+        font-family: "Caveat";
+        font-size: 25px;
+        width: 455px; }
+      .viewPage .topSection .viewDesc-container .viewTime h2 {
+        font-family: "Lato";
+        font-size: 20px;
+        font-style: bold; }
+      .viewPage .topSection .viewDesc-container .viewTime p {
+        font-family: "Caveat";
+        font-size: 25px;
+        width: 455px; }
+      .viewPage .topSection .viewDesc-container .viewServ h2 {
+        font-family: "Lato";
+        font-size: 20px;
+        font-style: bold; }
+      .viewPage .topSection .viewDesc-container .viewServ p {
+        font-family: "Caveat";
+        font-size: 25px;
+        width: 455px; }
+  .viewPage .bottomSection {
+    margin-top: 30px;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .viewPage .bottomSection .viewIng {
+      margin-top: 30px;
+      width: 90%;
+      margin: 0 auto; }
+      .viewPage .bottomSection .viewIng h1 {
+        font-family: "Lato";
+        font-size: 25px;
+        font-style: bold; }
+      .viewPage .bottomSection .viewIng p {
+        font-family: "Caveat";
+        font-size: 25px; }
+    .viewPage .bottomSection .viewIns {
+      width: 90%;
+      margin: 0 auto; }
+      .viewPage .bottomSection .viewIns h1 {
+        font-family: "Lato";
+        font-size: 25px;
+        font-style: bold; }
+      .viewPage .bottomSection .viewIns p {
+        font-family: "Caveat";
+        font-size: 25px; }
+    .viewPage .bottomSection .viewEditBtn {
+      display: flex;
+      width: 127px;
+      height: 42px;
+      margin-top: 50px;
+      margin-left: 60px;
+      background-color: #ffd972;
+      border-radius: 26px;
+      text-align: center;
+      cursor: pointer;
+      box-shadow: 0px 3px 10px 1px; }
+      .viewPage .bottomSection .viewEditBtn a {
+        text-decoration: none;
+        color: black; }
+        .viewPage .bottomSection .viewEditBtn a p {
+          padding-left: 50px;
+          padding-top: 10px;
+          font-family: "Caveat";
+          font-size: 20px; }
+
+.user {
+  display: none;
+  background-image: url(../images/recipe-hero.jpg);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(167, 232, 189, 0.65);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .user .browseTitle {
+    top: 150px;
+    left: 100;
+    padding-top: 200px; }
+    .user .browseTitle h1 {
+      font-family: "Caveat";
+      font-size: 25px; }
+  .user .browseRecipes2 {
+    padding-top: 100px;
+    background-color: rgba(167, 232, 189, 0.65);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px; }
+    .user .browseRecipes2 .b-item-container {
+      justify-content: space-between;
+      width: 524px;
+      height: 263px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: row; }
+      .user .browseRecipes2 .b-item-container #b-name {
+        font-family: "Caveat"; }
+      .user .browseRecipes2 .b-item-container .b-item-img {
+        width: 300px;
+        height: 263px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 24px;
+        box-shadow: 0px 3px 10px 1px; }
+        .user .browseRecipes2 .b-item-container .b-item-img .view {
+          display: flex;
+          width: 127px;
+          height: 42px;
+          margin-top: 110px;
+          margin-left: 80px;
+          background-color: #ffd972;
+          border-radius: 26px;
+          text-align: center;
+          cursor: pointer;
+          box-shadow: 0px 3px 10px 1px; }
+          .user .browseRecipes2 .b-item-container .b-item-img .view a {
+            text-decoration: none;
+            color: black; }
+            .user .browseRecipes2 .b-item-container .b-item-img .view a p {
+              padding-left: 50px;
+              padding-top: 10px;
+              font-family: "Caveat";
+              font-size: 20px; }
+      .user .browseRecipes2 .b-item-container .b-item-info {
+        background-color: white;
+        border-radius: 24px;
+        width: 224px;
+        height: 263px;
+        box-shadow: 0px 3px 10px 1px; }
+        .user .browseRecipes2 .b-item-container .b-item-info .b-item-line {
+          margin-top: 43px;
+          margin-left: 47px;
+          height: 20px;
+          width: 130px;
+          border-bottom: 3px solid black; }
+          .user .browseRecipes2 .b-item-container .b-item-info .b-item-line h1 {
+            padding-bottom: -100px;
+            font-family: "Lato";
+            font-size: 15px; }
+        .user .browseRecipes2 .b-item-container .b-item-info .b-item-desc {
+          margin-top: 18px;
+          margin-left: 47px;
+          width: 138px;
+          height: 70px; }
+          .user .browseRecipes2 .b-item-container .b-item-info .b-item-desc p {
+            font-family: "Lato";
+            font-size: 9px; }
+        .user .browseRecipes2 .b-item-container .b-item-info .b-time-container {
+          margin-left: 47px;
+          width: 138px;
+          height: 24px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .user .browseRecipes2 .b-item-container .b-item-info .b-time-container .b-time-img {
+            background-image: url(../images/time.svg);
+            background-size: cover;
+            background-position: center;
+            height: 24px;
+            width: 24px; }
+          .user .browseRecipes2 .b-item-container .b-item-info .b-time-container .b-time {
+            height: 13px; }
+            .user .browseRecipes2 .b-item-container .b-item-info .b-time-container .b-time p {
+              padding-left: 10px;
+              padding-top: 5px;
+              font-family: "Lato";
+              font-size: 10px; }
+        .user .browseRecipes2 .b-item-container .b-item-info .b-serving-container {
+          margin-top: 10px;
+          margin-left: 47px;
+          width: 138px;
+          height: 24px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .user .browseRecipes2 .b-item-container .b-item-info .b-serving-container .b-serving-img {
+            background-image: url(../images/servings.svg);
+            background-size: cover;
+            background-position: center;
+            height: 24px;
+            width: 24px; }
+          .user .browseRecipes2 .b-item-container .b-item-info .b-serving-container .b-serving {
+            height: 13px; }
+            .user .browseRecipes2 .b-item-container .b-item-info .b-serving-container .b-serving p {
+              padding-left: 10px;
+              padding-top: 5px;
+              font-family: "Lato";
+              font-size: 10px; }
+    .user .browseRecipes2 .update-container {
+      display: flex;
+      flex-direction: row; }
+      .user .browseRecipes2 .update-container .edit {
+        margin-left: 10px;
+        width: 127px;
+        height: 42px;
+        margin-top: 50px;
+        background-color: #ffd972;
+        border-radius: 26px;
+        padding-top: 7px;
+        text-align: center;
+        box-shadow: 0px 3px 10px 1px; }
+        .user .browseRecipes2 .update-container .edit a {
+          text-decoration: none;
+          color: black; }
+          .user .browseRecipes2 .update-container .edit a p {
+            font-family: "Caveat";
+            font-size: 20px; }
+      .user .browseRecipes2 .update-container .delete {
+        margin-left: 20px;
+        width: 127px;
+        height: 42px;
+        margin-top: 50px;
+        background-color: #ffd972;
+        border-radius: 26px;
+        padding-top: 7px;
+        text-align: center;
+        box-shadow: 0px 3px 10px 1px; }
+        .user .browseRecipes2 .update-container .delete a {
+          text-decoration: none;
+          color: black; }
+          .user .browseRecipes2 .update-container .delete a p {
+            font-family: "Caveat";
+            font-size: 20px; }
+
+.footer {
+  position: fixed;
+  display: inline-block;
+  bottom: 10px;
+  width: 100%;
+  margin-left: 100px;
+  width: 1280px;
+  height: 10px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .footer .copyright p {
+    font-size: 15px;
+    font-family: "Lato";
+    font-style: italic; }
+  .footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .footer .links a {
+      padding-left: 25px;
+      padding-right: 25px;
+      font-family: "Lato";
+      font-style: italic;
+      color: black;
+      text-decoration: none; }
+  .footer .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .footer .socialMedia a {
+      padding-left: 40px; }
+      .footer .socialMedia a .facebook {
+        height: 20px;
+        width: 20px;
+        background-image: url(../images/facebook.svg);
+        background-position: center;
+        background-size: cover; }
+      .footer .socialMedia a .instagram {
+        height: 20px;
+        width: 20px;
+        background-image: url(../images/instagram.svg);
+        background-position: center;
+        background-size: cover; }
+
+@media all and (max-width: 768px) {
+  .footer {
+    display: none; } }
+
+.update {
+  display: none;
+  height: 100%; }
+  .update .u-r-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 210px; }
+    .update .u-r-container .u-r-title h1 {
+      font-family: "Caveat";
+      font-size: 25px; }
+    .update .u-r-container .u-r-img {
+      display: flex;
+      flex-direction: row;
+      margin-top: 80px;
+      height: 40px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-r-container .u-r-img #u-addImg {
+        margin-top: 10px;
+        width: 95%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-r-container .u-r-img #u-addImg::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+      .update .u-r-container .u-r-img .u-attachFile {
+        padding-top: -40px;
+        width: 110px;
+        height: 30px;
+        background-color: #FCBCB8;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0px 3px 10px 1px; }
+        .update .u-r-container .u-r-img .u-attachFile p {
+          font-family: "Caveat";
+          text-align: center;
+          font-size: 17px;
+          padding-top: 3px; }
+    .update .u-r-container .u-r-name {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-r-container .u-r-name #u-addName {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-r-container .u-r-name #u-addName::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-r-container .u-r-desc {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-r-container .u-r-desc #u-addDesc {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-r-container .u-r-desc #u-addDesc::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-r-container .u-r-time {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-r-container .u-r-time #u-addTime {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-r-container .u-r-time #u-addTime::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-r-container .u-r-size {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-r-container .u-r-size #u-addSize {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-r-container .u-r-size #u-addSize::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+  .update .u-ing-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 50px; }
+    .update .u-ing-container .u-ing-title h1 {
+      font-family: "Lato";
+      font-style: bold;
+      font-size: 20px; }
+    .update .u-ing-container .u-ing-1 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-ing-container .u-ing-1 #u-addI1 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-ing-container .u-ing-1 #u-addI1::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-ing-container .u-ing-2 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-ing-container .u-ing-2 #u-addI2 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-ing-container .u-ing-2 #u-addI2::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-ing-container .u-ing-3 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-ing-container .u-ing-3 #u-addI3 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-ing-container .u-ing-3 #u-addI3::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+  .update .u-ins-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 50px; }
+    .update .u-ins-container .u-ins-title h1 {
+      font-family: "Lato";
+      font-style: bold;
+      font-size: 20px; }
+    .update .u-ins-container .u-ins-1 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-ins-container .u-ins-1 #u-addIns1 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-ins-container .u-ins-1 #u-addIns1::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-ins-container .u-ins-2 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-ins-container .u-ins-2 #u-addIns2 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-ins-container .u-ins-2 #u-addIns2::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-ins-container .u-ins-3 {
+      margin-top: 80px;
+      height: 30px;
+      width: 100%;
+      border-bottom: 3px solid black; }
+      .update .u-ins-container .u-ins-3 #u-addIns3 {
+        width: 100%;
+        height: 24px;
+        font-family: "Lato";
+        font-size: 20px;
+        color: black;
+        padding-top: -10px;
+        border: none;
+        outline: none; }
+      .update .u-ins-container .u-ins-3 #u-addIns3::placeholder {
+        font-family: "Lato";
+        font-size: 20px; }
+    .update .u-ins-container a {
+      text-decoration: none;
+      text-align: center; }
+      .update .u-ins-container a .updateBtn {
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 40px;
+        display: flex;
+        background-color: #FCBCB8;
+        width: 422px;
+        height: 52px; }
+        .update .u-ins-container a .updateBtn h1 {
+          margin: auto;
+          color: black;
+          font-family: "Caveat";
+          font-size: 25px; }

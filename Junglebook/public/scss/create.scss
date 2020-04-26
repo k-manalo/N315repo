@@ -1,0 +1,339 @@
+.create {
+    display: none;
+    height: 100%;
+    .r-container {
+        //background-color: red;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 210px;
+        .r-title {
+            h1 {
+                font-family: "Caveat";
+                font-size: 25px;
+
+            }
+        }
+        .r-img {
+            display: flex;
+            flex-direction: row;
+            margin-top: 80px;
+                height: 40px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addImg {
+                    margin-top: 10px;
+                    width: 95%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addImg::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+                .attachFile {
+                    padding-top: -40px;
+                    width: 110px;
+                    height: 30px;
+                    background-color: #FCBCB8;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    box-shadow: 0px 3px 10px 1px;
+                    p {
+                        font-family: "Caveat";
+                        text-align: center;
+                        font-size: 17px;
+                        padding-top: 3px;
+
+                    }
+                }
+        }
+        .r-name {
+
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addName {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addName::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .r-desc {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addDesc {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addDesc::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .r-time {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addTime {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addTime::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .r-size {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addSize {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addSize::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+    }
+    .ing-container {
+        //background-color: red;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        .ing-title {
+
+            h1 {
+                font-family: "Lato";
+                font-style: bold;
+                font-size: 20px;
+            }
+        }
+        .ing-1 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addI1 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addI1::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .ing-2 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addI2 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addI2::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .ing-3 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addI3 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addI3::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+    }
+    .ins-container {
+        //background-color: red;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+        margin-bottom: 50px;
+        .ins-title {
+            h1 {
+                font-family: "Lato";
+                font-style: bold;
+                font-size: 20px;
+            }
+        }
+        .ins-1 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addIns1 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addIns1::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .ins-2 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addIns2 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addIns2::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .ins-3 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #addIns3 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #addIns3::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        a {
+            
+            text-decoration: none;
+            text-align: center;
+            .createBtn {
+                margin: auto;
+                margin-top: 50px;
+                border-radius: 40px;
+                display: flex;
+                background-color: #FCBCB8;
+                width: 422px;
+                height: 52px;
+                h1 {
+                    margin: auto;
+                    color: black;
+                    font-family: "Caveat";
+                    font-size: 25px;
+
+                }
+            }
+            
+        }
+    }
+}
+

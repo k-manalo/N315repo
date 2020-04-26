@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Junglecook | Create</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lato:ital@0;1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--LOGO-->
+   <div class="logo">
+     
+   </div>
+   <!--NAV-->
+    <div class="nav-holder">
+      <a href="#" id="home">Home</a>
+      <a href="#" id="browse">Browse</a>
+      <a href="#" id="create-recipe">Create Recipe</a>
+      <a href="#" id="login">Login</a>
+    </div>
+    <!--BARS-->
+    <div class="bars">
+      <img src="images/bars.svg" alt="bars">
+    </div>
+
+    <div class="create">
+        <div class="r-container">
+            <div class="r-title">
+                <h1>Hey Kyle, create your recipe!</h1>
+            </div>
+            <div class="r-img">
+                <input type="text" id="addImg" placeholder="Add Recipe Image">
+                <div class="attachFile">
+                    <p>Attach File</p>
+                </div>
+            </div>
+            <div class="r-name">
+                <input type="text" id="addName" placeholder="Recipe Name">
+            </div>
+            <div class="r-desc">
+                <input type="text" id="addDesc" placeholder="Recipe Description">
+            </div>
+            <div class="r-time">
+                <input type="text" id="addTime" placeholder="Recipe Total Time">
+            </div>
+            <div class="r-size">
+                <input type="text" id="addSize" placeholder="Recipe Serving Size">
+            </div>
+        </div>
+        <div class="ing-container">
+            <div class="ing-title">
+                <h1>Enter Ingredients:</h1>
+            </div>
+            <div class="ing-1">
+                <input type="text" id="addI1" placeholder="Ingredient #1">
+            </div>
+            <div class="ing-2">
+                
+                    <input type="text" id="addI2" placeholder="Ingredient #2">
+            </div>
+            <div class="ing-3">
+                
+                    <input type="text" id="addI3" placeholder="Ingredient #3">
+            </div>
+          </div>
+        <div class="ins-container">
+            <div class="ins-title">
+                <h1>Enter Instructions:</h1>
+            </div>
+            <div class="ins-1">
+                <input type="text" id="addIns1" placeholder="Instruction #1">
+            </div>
+            <div class="ins-2">
+                <input type="text" id="addIns2" placeholder="Instruction #2">
+            </div>
+            <div class="ins-3">
+                <input type="text" id="addIns3" placeholder="Instruction #3">
+            </div>
+            <a href="#">
+                <div class="createBtn">
+                    <h1>Create Recipe</h1>
+                </div> 
+            </a> 
+        </div>
+
+        <!-- UPDATE -->
+
+        <div class="update">
+          <div class="r-container">
+              <div class="r-title">
+                  <h1>Hey Kyle, create your recipe!</h1>
+              </div>
+              <div class="r-img">
+                  <input type="text" id="addImg" placeholder="Add Recipe Image">
+                  <div class="attachFile">
+                      <p>Attach File</p>
+                  </div>
+              </div>
+              <div class="r-name">
+                  <input type="text" id="addName" placeholder="Recipe Name">
+              </div>
+              <div class="r-desc">
+                  <input type="text" id="addDesc" placeholder="Recipe Description">
+              </div>
+              <div class="r-time">
+                  <input type="text" id="addTime" placeholder="Recipe Total Time">
+              </div>
+              <div class="r-size">
+                  <input type="text" id="addSize" placeholder="Recipe Serving Size">
+              </div>
+          </div>
+          <div class="ing-container">
+              <div class="ing-title">
+                  <h1>Enter Ingredients:</h1>
+              </div>
+              <div class="ing-1">
+                  <input type="text" id="addI1" placeholder="Ingredient #1">
+              </div>
+              <div class="ing-2">
+                  
+                      <input type="text" id="addI2" placeholder="Ingredient #2">
+              </div>
+              <div class="ing-3">
+                  
+                      <input type="text" id="addI3" placeholder="Ingredient #3">
+              </div>
+            </div>
+          <div class="ins-container">
+              <div class="ins-title">
+                  <h1>Enter Instructions:</h1>
+              </div>
+              <div class="ins-1">
+                  <input type="text" id="addIns1" placeholder="Instruction #1">
+              </div>
+              <div class="ins-2">
+                  <input type="text" id="addIns2" placeholder="Instruction #2">
+              </div>
+              <div class="ins-3">
+                  <input type="text" id="addIns3" placeholder="Instruction #3">
+              </div>
+              <a href="#">
+                  <div class="updateBtn">
+                      <h1>Create Recipe</h1>
+                  </div> 
+              </a> 
+          </div>
+            
+    </div>
+
+    <div class="footer">
+      <div class="copyright">
+        <p>Copyright © 2019 The Jungle Cook</p>
+      </div>
+      <div class="links">
+        <a href="#" id="fLogin">Login</a>
+      <a href="#" id="rbc">Recipes by Category</a>
+      <a href="#" id="privacy">Privacy and Copyright</a>
+      <a href="#" id="fCreate">Create Recipe</a>
+      <a href="#" id="yourRecipes">Your Recipes</a>
+      </div>
+      <div class="socialMedia">
+        <a href="#">
+          <div class="facebook"></div>
+        </a>
+        <a href="#">
+          <div class="instagram"></div>
+        </a>
+      </div>
+    </div>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.14.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.14.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.14.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <script src="lib/jquery.min.js"></script>
+    <script src="app/app.js"></script>
+    
+  </body>
+</html>

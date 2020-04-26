@@ -1,0 +1,338 @@
+.update {
+    display: none;
+    height: 100%;
+    .u-r-container {
+        //background-color: red;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 210px;
+        .u-r-title {
+            h1 {
+                font-family: "Caveat";
+                font-size: 25px;
+
+            }
+        }
+        .u-r-img {
+            display: flex;
+            flex-direction: row;
+            margin-top: 80px;
+                height: 40px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addImg {
+                    margin-top: 10px;
+                    width: 95%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addImg::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+                .u-attachFile {
+                    padding-top: -40px;
+                    width: 110px;
+                    height: 30px;
+                    background-color: #FCBCB8;
+                    border-radius: 20px;
+                    margin-bottom: 20px;
+                    box-shadow: 0px 3px 10px 1px;
+                    p {
+                        font-family: "Caveat";
+                        text-align: center;
+                        font-size: 17px;
+                        padding-top: 3px;
+
+                    }
+                }
+        }
+        .u-r-name {
+
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addName {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addName::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .u-r-desc {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addDesc {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addDesc::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .u-r-time {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addTime {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addTime::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .u-r-size {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addSize {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addSize::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+    }
+    .u-ing-container {
+        //background-color: red;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 50px;
+        .u-ing-title {
+
+            h1 {
+                font-family: "Lato";
+                font-style: bold;
+                font-size: 20px;
+            }
+        }
+        .u-ing-1 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addI1 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addI1::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .u-ing-2 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addI2 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addI2::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .u-ing-3 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addI3 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addI3::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+    }
+    .u-ins-container {
+        //background-color: red;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+        margin-bottom: 50px;
+        .u-ins-title {
+            h1 {
+                font-family: "Lato";
+                font-style: bold;
+                font-size: 20px;
+            }
+        }
+        .u-ins-1 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addIns1 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addIns1::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .u-ins-2 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addIns2 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addIns2::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        .u-ins-3 {
+            margin-top: 80px;
+                height: 30px;
+                width: 100%;
+                border-bottom: 3px solid black;
+                #u-addIns3 {
+                    width: 100%;
+                    height: 24px;
+                    font-family: "Lato";
+                    font-size: 20px;
+                    color: black;
+                    padding-top: -10px;
+             
+                    border: none;
+                    outline: none;
+                }
+                #u-addIns3::placeholder {
+                    font-family: "Lato";
+                    font-size: 20px;
+                    //color: black;
+                }
+        }
+        a {
+            
+            text-decoration: none;
+            text-align: center;
+            .updateBtn {
+                margin: auto;
+                margin-top: 50px;
+                border-radius: 40px;
+                display: flex;
+                background-color: #FCBCB8;
+                width: 422px;
+                height: 52px;
+                h1 {
+                    margin: auto;
+                    color: black;
+                    font-family: "Caveat";
+                    font-size: 25px;
+
+                }
+            }
+            
+        }
+    }
+}

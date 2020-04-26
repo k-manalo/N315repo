@@ -1,0 +1,17 @@
+{
+  "name": "junglebook",
+  "version": "1.0.0",
+  "description": "Recipe Application",
+  "main": "index.js",
+  "scripts": {
+    "host": "firebase serve --only hosting",
+    "sass": "node-sass public/scss/styles.scss public/css/styles.css -w",
+    "deploy": "firebase deploy --except functions"
+  },
+  "author": "Kyle Manalo",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "node-sass": "^4.13.1"
+  }
+}

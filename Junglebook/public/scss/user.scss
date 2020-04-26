@@ -1,0 +1,209 @@
+.user
+{
+    
+    display: none;
+    background-image: url(../images/recipe-hero.jpg);
+    height: 100%;
+    width: 100%;
+    background-color: rgba(167,232,189,.65);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    
+    .browseTitle {
+        top: 150px;
+        left:100;
+        padding-top: 200px;
+        h1 {
+            font-family: "Caveat";
+            font-size: 25px;
+        }
+    }
+    
+    
+    .browseRecipes2 {
+       
+       padding-top: 100px;
+        background-color: rgba(167,232,189,.65);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 100px;
+        
+        
+        //background-color: blue;
+    
+    .b-item-container {
+        justify-content: space-between;
+        width: 524px;
+        height: 263px;
+        //background-color: red;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        flex-direction: row;
+        #b-name {
+            font-family: "Caveat";
+        }
+        .b-item-img {
+            width: 300px;
+            height: 263px;
+           
+            background-position: center;
+            background-size: cover;
+            border-radius: 24px;
+            box-shadow: 0px 3px 10px 1px;
+            .view {
+                display: flex;
+                width: 127px;
+                height: 42px;
+                margin-top: 110px;
+                margin-left: 80px;
+                background-color: #ffd972;
+                border-radius: 26px;
+                text-align: center;
+                cursor: pointer;
+                
+                box-shadow: 0px 3px 10px 1px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    p {
+                        padding-left: 50px;
+                        padding-top: 10px;
+                        font-family: "Caveat";
+                        font-size: 20px;
+                    } 
+                }
+            }
+        }
+        .b-item-info {
+            background-color: white;
+            border-radius: 24px;
+            width: 224px;
+            height: 263px;
+            box-shadow: 0px 3px 10px 1px;
+            .b-item-line {
+                margin-top: 43px;
+                margin-left: 47px;
+                height: 20px;
+                width: 130px;
+                border-bottom: 3px solid black;
+               
+                h1 {
+                    padding-bottom: -100px;
+                    font-family: "Lato";
+                    font-size: 15px;
+                }
+            }
+            .b-item-desc {
+                margin-top: 18px;
+                margin-left: 47px;
+                width: 138px;
+                height: 70px;
+                p {
+                    font-family: "Lato";
+                    font-size: 9px;
+                }
+            }
+            .b-time-container {
+                //background-color: red;
+                margin-left: 47px;
+                width: 138px;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .b-time-img {
+                    background-image: url(../images/time.svg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 24px;
+                    width: 24px;
+                }
+                .b-time {
+                    height: 13px;
+                   
+                    p {
+                        padding-left: 10px;
+                        padding-top: 5px;
+                        font-family: "Lato";
+                        font-size: 10px;
+                    }
+                }
+            }
+            .b-serving-container {
+                margin-top: 10px;
+                //background-color: red;
+                margin-left: 47px;
+                width: 138px;
+                height: 24px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                .b-serving-img {
+                    background-image: url(../images/servings.svg);
+                    background-size: cover;
+                    background-position: center;
+                    height: 24px;
+                    width: 24px;
+                }
+                .b-serving {
+                    height: 13px;
+                    p {
+                        padding-left: 10px;
+                        padding-top: 5px;
+                        font-family: "Lato";
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .update-container {
+        display: flex;
+        flex-direction: row;
+        
+        .edit {
+            margin-left: 10px;
+            width: 127px;
+            height: 42px;
+            margin-top: 50px;
+            background-color: #ffd972;
+            border-radius: 26px;
+            padding-top: 7px;
+            text-align: center;
+            box-shadow: 0px 3px 10px 1px;
+            a {
+                text-decoration: none;
+                color: black;
+                p {
+                    font-family: "Caveat";
+                    font-size: 20px;
+                } 
+            }
+        }
+        .delete {
+            margin-left: 20px;
+            width: 127px;
+            height: 42px;
+            margin-top: 50px;
+            background-color: #ffd972;
+            border-radius: 26px;
+            padding-top: 7px;
+            text-align: center;
+            box-shadow: 0px 3px 10px 1px;
+            a {
+                text-decoration: none;
+                color: black;
+                p {
+                    font-family: "Caveat";
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+}

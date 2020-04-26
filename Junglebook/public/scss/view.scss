@@ -1,0 +1,135 @@
+.viewPage {
+    display: none;
+    height: 100%;
+    width: 100%;
+    .topSection {
+        //background-color: grey;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 243px;
+        display: flex;
+        flex-direction: row;
+        //justify-content: space-between;
+        margin-bottom: 100px;
+        .vertName {
+            
+            h1 {
+                writing-mode: vertical-lr;
+
+                font-family: "Lato";
+                font-size: 25px;
+                font-style: bold;
+            }
+        }
+        .viewImg {
+            background-image: url(../images/recipe-pizza.jpg);
+            width: 468px;
+            height: 421px;
+            background-position: center;
+            background-size: cover;
+        }
+        .viewDesc-container {
+            margin-left: 50px;
+            .viewDescTitle {
+
+            }
+            .viewDesc {
+                h1 {
+                    font-family: "Lato";
+                font-size: 25px;
+                font-style: bold;
+                }
+                p {
+                    font-family: "Caveat";
+                    font-size: 25px;
+                width: 455px;
+                }
+            }
+            .viewTime {
+                h2 {
+                    font-family: "Lato";
+                font-size: 20px;
+                font-style: bold;
+                }
+                p {
+                    font-family: "Caveat";
+                    font-size: 25px;
+                width: 455px;
+                }
+            }
+            .viewServ {
+                h2 {
+                    font-family: "Lato";
+                font-size: 20px;
+                font-style: bold;
+                }
+                p {
+                    font-family: "Caveat";
+                    font-size: 25px;
+                width: 455px;
+                }
+            }
+        }
+    }
+    .bottomSection {
+        margin-top: 30px;
+        //backsground-color: blue;
+        height: 100%;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        .viewIng {
+            margin-top: 30px;
+            width: 90%;
+            margin: 0 auto;
+            h1 {
+                
+                font-family: "Lato";
+                font-size: 25px;
+                font-style: bold;
+            }
+            p {
+                font-family: "Caveat";
+                    font-size: 25px;
+            }
+        }
+        .viewIns {
+            width: 90%;
+            margin: 0 auto;
+            h1 {
+                
+                font-family: "Lato";
+                font-size: 25px;
+                font-style: bold;
+            }
+            p {
+                font-family: "Caveat";
+                    font-size: 25px;
+            }
+        }
+        .viewEditBtn {
+            display: flex;
+                width: 127px;
+                height: 42px;
+                margin-top: 50px;
+                margin-left: 60px;
+                background-color: #ffd972;
+                border-radius: 26px;
+                text-align: center;
+                cursor: pointer;
+                
+                box-shadow: 0px 3px 10px 1px;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    p {
+                        padding-left: 50px;
+                        padding-top: 10px;
+                        font-family: "Caveat";
+                        font-size: 20px;
+                    } 
+                }
+        }
+    }
+}
