@@ -11,3 +11,6 @@ https://treefrog-cms.firebaseapp.com/homework5&6.html
 
 Homework 6 (Updating and Deleting):
 https://treefrog-cms.firebaseapp.com/homework6.html
+
+Junglecook (final):
+https://treefrog-cms.web.app/junglecook.html
